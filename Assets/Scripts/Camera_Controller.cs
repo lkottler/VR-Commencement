@@ -12,7 +12,7 @@ public class Camera_Controller : MonoBehaviour
 
     private void Start()
     {
-        thirdPersonOffset = new Vector3(playerTransform.position.x, playerTransform.position.y + 0.5f, playerTransform.position.z);
+        thirdPersonOffset = new Vector3(playerTransform.position.x, playerTransform.position.y + 2.0f, playerTransform.position.z);
         transform.LookAt(thirdPersonOffset); // Face Camera towards thirdPersonOffset.
 
         Cursor.lockState = CursorLockMode.Locked;       // Cursor is centered to the screen and locked in place.
@@ -24,7 +24,7 @@ public class Camera_Controller : MonoBehaviour
     }
     private void LateUpdate()
     {
-        thirdPersonOffset = new Vector3(playerTransform.position.x, playerTransform.position.y + 0.5f, playerTransform.position.z);
+        thirdPersonOffset = new Vector3(playerTransform.position.x, playerTransform.position.y + 2.0f, playerTransform.position.z);
         repositionCamera(); // Reposition camera based on the rotation assosiated with mouseInput.
     }
 
