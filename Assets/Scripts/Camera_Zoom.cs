@@ -35,7 +35,7 @@ public class Camera_Zoom: MonoBehaviour
         zZoomDistance = zIntDistance;
 
         // Initialize minimum zoomIn position.
-        minZoomPosition = new Vector3(player.transform.position.x, player.transform.position.y + 0.5f, player.transform.position.z);
+        minZoomPosition = new Vector3(player.transform.position.x, player.transform.position.y + 2.0f, player.transform.position.z);
         // Initialize maximum zoomOut position.
         maxZoomPosition = new Vector3(minZoomPosition.x + xIntDistance, minZoomPosition.y + yIntDistance, minZoomPosition.z + zIntDistance);
         // Initialize current camera position.
@@ -62,7 +62,7 @@ public class Camera_Zoom: MonoBehaviour
     void updateCameraPositionProperties ()
     {
         // Update minimum zoomIn position.
-        minZoomPosition = new Vector3(player.transform.position.x, player.transform.position.y + 0.5f, player.transform.position.z);
+        minZoomPosition = new Vector3(player.transform.position.x, player.transform.position.y + 2.0f, player.transform.position.z);
         // Update maximum zoomOut position.
         maxZoomPosition = new Vector3(minZoomPosition.x + xIntDistance, minZoomPosition.y + yIntDistance, minZoomPosition.z + zIntDistance);
         // Update current camera position.
