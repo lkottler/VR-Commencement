@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\Camera_Zoom.cs" />
      <Compile Include="Assets\Scripts\CharacterMovement.cs" />
      <Compile Include="Assets\cube.cs" />
+     <Compile Include="Assets\Scripts\SimplePeoplePlayer.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/dingz/Dropbox/cs506/VR-Commencement/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
