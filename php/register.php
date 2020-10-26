@@ -1,5 +1,5 @@
 <?php
-	$db = mysqli_connect('34.67.175.21', 'root', 'vrcommencement', 'commencement');
+	$db = mysqli_connect('35.193.218.50', 'root', 'vrcommencement', 'commencement');
 
 	if (mysqli_connect_errno())
 	{
