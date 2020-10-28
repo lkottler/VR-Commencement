@@ -18,6 +18,9 @@ public class Camera_Zoom: MonoBehaviour
     private float yZoomDistance;            // (Helps update the current camera transform based on this distance and the current
     private float zZoomDistance;            // position of the player);
 
+    public float height = 1.0f;
+    public int ZoomFactor = 20;
+
     // Start is called before the first frame update.
     void Start()
     {
@@ -35,7 +38,7 @@ public class Camera_Zoom: MonoBehaviour
         zZoomDistance = zIntDistance;
 
         // Initialize minimum zoomIn position.
-        minZoomPosition = new Vector3(player.transform.position.x, player.transform.position.y + 2.0f, player.transform.position.z);
+        minZoomPosition = new Vector3(player.transform.position.x, player.transform.position.y + height, player.transform.position.z);
         // Initialize maximum zoomOut position.
         maxZoomPosition = new Vector3(minZoomPosition.x + xIntDistance, minZoomPosition.y + yIntDistance, minZoomPosition.z + zIntDistance);
         // Initialize current camera position.
@@ -62,7 +65,7 @@ public class Camera_Zoom: MonoBehaviour
     void updateCameraPositionProperties ()
     {
         // Update minimum zoomIn position.
-        minZoomPosition = new Vector3(player.transform.position.x, player.transform.position.y + 2.0f, player.transform.position.z);
+        minZoomPosition = new Vector3(player.transform.position.x, player.transform.position.y + height, player.transform.position.z);
         // Update maximum zoomOut position.
         maxZoomPosition = new Vector3(minZoomPosition.x + xIntDistance, minZoomPosition.y + yIntDistance, minZoomPosition.z + zIntDistance);
         // Update current camera position.
@@ -171,6 +174,6 @@ public class Camera_Zoom: MonoBehaviour
         zZoomDistance = newCameraPosition.z - minZoomPosition.z;
 
         // Updates Camera Position
-        transform.position = newCameraPosition * Time.deltaTime * zoomSpeed;
+        transform.position = newCameraPosition * Time.deltaTime * zoomSpeed*ZoomFactor;
     }      
 }

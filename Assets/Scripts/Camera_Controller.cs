@@ -9,10 +9,10 @@ public class Camera_Controller : MonoBehaviour
     private float mouseX = 0.0f;        // Current X value of mouse input.
     private float mouseY = 0.0f;        // Current Y value of mouse input.
     private float initialCameraAngle;   // Inital angle of the player's camera.
-
+    public float height = 1.0f;
     private void Start()
     {
-        thirdPersonOffset = new Vector3(playerTransform.position.x, playerTransform.position.y + 2.0f, playerTransform.position.z);
+        thirdPersonOffset = new Vector3(playerTransform.position.x, playerTransform.position.y + height, playerTransform.position.z);
         transform.LookAt(thirdPersonOffset); // Face Camera towards thirdPersonOffset.
 
         Cursor.lockState = CursorLockMode.Locked;       // Cursor is centered to the screen and locked in place.
@@ -24,7 +24,7 @@ public class Camera_Controller : MonoBehaviour
     }
     private void LateUpdate()
     {
-        thirdPersonOffset = new Vector3(playerTransform.position.x, playerTransform.position.y + 2.0f, playerTransform.position.z);
+        thirdPersonOffset = new Vector3(playerTransform.position.x, playerTransform.position.y + height, playerTransform.position.z);
         repositionCamera(); // Reposition camera based on the rotation assosiated with mouseInput.
     }
 

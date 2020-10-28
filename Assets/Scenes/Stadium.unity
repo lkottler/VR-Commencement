@@ -179,7 +179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 450740, guid: c81d098666f078147ad62f215ab08e2e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 125.37
+      value: 126.14
       objectReference: {fileID: 0}
     - target: {fileID: 450740, guid: c81d098666f078147ad62f215ab08e2e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2542,6 +2542,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 716323163}
+  height: 0.5
+  ZoomFactor: 7
 --- !u!114 &963194231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2555,6 +2557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 716323165}
+  height: 3
 --- !u!1 &979918765
 GameObject:
   m_ObjectHideFlags: 0
