@@ -13,19 +13,31 @@ namespace Tests
         public void RegisterTestSimplePasses()
         {
             // Use the Assert class to test conditions
-            // Ex: Assert.AreEqual("hello", "hello");
 
-            // TODO: Call registration method
-            
+            ///////////////////////////////
+            // TEST 1: SIMPLE USER
+            ///////////////////////////////
+
+            // Call registration method with input 
+            string user = "RegTestUser";
+            string pass = "RegTestPass";
+            //register(user, pass);
 
             // TODO: Get info from database
             // query database
-
-
-            // TODO: Check that registration info matches database entry
-            // check information exsists
-            // check information matches
-
+            string DBuser = "";
+            string DBpass = "";
+            //DBuser = ;
+            //DBpass = ;
+            
+            // Check information exists
+            Assert.True(DBuser != "");
+            Assert.True(DBpass != "");
+            
+            // Check information is correct
+            Assert.AreEqual(user, DBuser);
+            Assert.AreEqual(pass, DBpass);
+ 
 
         }
 
