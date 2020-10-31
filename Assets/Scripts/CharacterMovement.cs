@@ -33,14 +33,13 @@ public class CharacterMovement : MonoBehaviour
 		if (Input.GetKey(KeyCode.Q))
 		{
 			transform.Rotate(-Vector3.up * rotateSpeed * Time.deltaTime);
-			return;
 		}
 
 		if (Input.GetKey(KeyCode.E))
 		{
 			transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
-			return;
 		}
+
 		float h = Input.GetAxis("Horizontal");
 		float v = Input.GetAxis("Vertical");
 		if (Input.GetKey(KeyCode.LeftShift))
