@@ -41,7 +41,7 @@ public class HomePage : MonoBehaviour
         WWWForm form = new WWWForm();
         form.AddField("name", regUser.text);
         form.AddField("password", regPW.text);
-        string url = "LINK TO PHP OF REGISTER"; //TODO
+        string url = "http://pages.cs.wisc.edu/~lkottler/commencement/register"; //TODO
 
         using (UnityWebRequest webRequest = UnityWebRequest.Post(url, form))
         {
@@ -49,7 +49,7 @@ public class HomePage : MonoBehaviour
             if (webRequest.downloadHandler.text[0] == '0')
             {
                 Debug.Log("Registration worked.");
-                // TODO load user into the game
+                SpawnPlayer();
             }
             else
             {
@@ -69,7 +69,7 @@ public class HomePage : MonoBehaviour
         WWWForm form = new WWWForm();
         form.AddField("name", logUser.text);
         form.AddField("password", logPW.text);
-        string url = "LINK TO PHP OF REGISTER"; //TODO
+        string url = "http://pages.cs.wisc.edu/~lkottler/commencement/login"; //TODO
 
         using (UnityWebRequest webRequest = UnityWebRequest.Post(url, form))
         {
@@ -77,7 +77,7 @@ public class HomePage : MonoBehaviour
             if (webRequest.downloadHandler.text[0] == '0')
             {
                 Debug.Log("Login worked.");
-                // TODO load user into the game
+                SpawnPlayer();
             }
             else
             {
