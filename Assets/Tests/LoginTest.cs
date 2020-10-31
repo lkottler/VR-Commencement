@@ -26,7 +26,12 @@ namespace Tests
             string user1 = "RegTestUser";
             string pass1 = "RegTestPass";
             bool success = false;
-            //success = login(user1, pass1);
+            HomePage home = new HomePage();
+            
+            home.logUser.text = user1;
+            home.logPW.text = pass1;
+            success = home.CallLogin();
+
             Assert.True(success);
 
             ////////////////////////////////////////////////////
@@ -37,7 +42,10 @@ namespace Tests
             string user2 = "RegTestUser";
             string pass2 = "RegTestPassBad";
             success = true;
-            //success = login(user2, pass2);
+            home = new HomePage();
+            home.logUser.text = user2;
+            home.logPW.text = pass2;
+            success = home.CallLogin();
             Assert.False(success);
 
             ////////////////////////////////////////////////////
@@ -48,7 +56,24 @@ namespace Tests
             string user3 = "RegTestUserBad";
             string pass3 = "RegTestPass";
             success = true;
-            //success = login(user3, pass3);
+            home = new HomePage();
+            home.logUser.text = user3;
+            home.logPW.text = pass3;
+            success = home.CallLogin();
+            Assert.False(success);
+
+            ////////////////////////////////////////////////////
+            // TEST 4: Login with bad password, bad username
+            ////////////////////////////////////////////////////
+
+            // Call login method with input
+            string user4 = "RegTestUserBad";
+            string pass4 = "RegTestPassBad";
+            success = true;
+            home = new HomePage();
+            home.logUser.text = user4;
+            home.logPW.text = pass4;
+            success = home.CallLogin();
             Assert.False(success);
 
         }

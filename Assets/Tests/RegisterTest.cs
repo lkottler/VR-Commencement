@@ -19,25 +19,14 @@ namespace Tests
             ///////////////////////////////
 
             // Call registration method with input 
-            string user = "RegTestUser";
-            string pass = "RegTestPass";
-            //register(user, pass);
-
-            // TODO: Get info from database
-            // query database
-            string DBuser = "";
-            string DBpass = "";
-            //DBuser = ;
-            //DBpass = ;
-            
-            // Check information exists
-            Assert.True(DBuser != "");
-            Assert.True(DBpass != "");
-            
-            // Check information is correct
-            Assert.AreEqual(user, DBuser);
-            Assert.AreEqual(pass, DBpass);
- 
+            string user1 = "RegTestUser";
+            string pass1 = "RegTestPass";
+            bool success = false;
+            HomePage home = new HomePage();
+            home.regUser.text = user1;
+            home.regPW.text = pass1;
+            success = home.CallRegister();
+            Assert.True(success);
 
         }
 
