@@ -9,6 +9,10 @@ using UnityEngine.UI;
 public class HomePage : MonoBehaviour
 {
     public InputField regUser, regPW, regConf, logUser, logPW;
+    public GameObject MenuCanvas;
+
+    public GameObject player;
+    public Camera loginCam;
 
     public Button loginBtn;
     public Button regBtn;
@@ -17,6 +21,19 @@ public class HomePage : MonoBehaviour
     public void CallRegister()
     {
         StartCoroutine(Register());
+    }
+
+    public void SpawnPlayer()
+    {
+        GameObject generatedPlayer = Instantiate(player, new Vector3(-149.5f, 126.215f, 262.58f), Quaternion.identity);
+        loginCam.enabled = false;
+        //generatedPlayer.transform.localScale = new Vector3(3, 3, 3);
+        MenuCanvas.SetActive(false);
+
+    }
+    public void CallGuest()
+    {
+        SpawnPlayer();
     }
 
     IEnumerator Register()
@@ -67,8 +84,6 @@ public class HomePage : MonoBehaviour
                 Debug.Log("Login failed. Error #" + webRequest.downloadHandler.text);
             }
         }
-
-
     }
 
     public void VerifyInputs()
