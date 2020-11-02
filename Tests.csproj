@@ -47,6 +47,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\Tests\RegisterTest.cs" />
+    <Compile Include="Assets\Tests\LoginTest.cs" />
+    <Compile Include="Assets\Tests\HomePage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+     <None Include="Assets\Tests\Tests.asmdef" />
+>>>>>>> Stashed changes
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.6f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
