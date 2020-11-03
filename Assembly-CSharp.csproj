@@ -74,6 +74,10 @@
     <Compile Include="Assets\cube.cs" />
     <Compile Include="Assets\Scripts\TestConnect.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
+    <Compile Include="Assets\Scripts\Networking\NetworkController.cs" />
+    <Compile Include="Assets\Scripts\Networking\QuickSpawn.cs" />
+    <Compile Include="Assets\Scripts\Networking\QuickSpawnRoomController.cs" />
+    <Compile Include="Assets\Scripts\Networking\GameSetupController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
