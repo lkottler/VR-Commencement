@@ -4,15 +4,16 @@ using System.Collections.Generic;
 using System.Net;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HomePage : MonoBehaviour
 {
     public InputField regUser, regPW, regConf, logUser, logPW;
     public GameObject MenuCanvas;
+    public QuickSpawn QuickSpawnController;
 
     public GameObject player;
-    public Camera loginCam;
 
     public Button loginBtn;
     public Button regBtn;
@@ -25,11 +26,10 @@ public class HomePage : MonoBehaviour
 
     public void SpawnPlayer()
     {
-        GameObject generatedPlayer = Instantiate(player, new Vector3(-149.5f, 126.215f, 262.58f), Quaternion.identity);
-        loginCam.enabled = false;
+        //GameObject generatedPlayer = Instantiate(player, new Vector3(-149.5f, 126.215f, 262.58f), Quaternion.identity);
         //generatedPlayer.transform.localScale = new Vector3(3, 3, 3);
-        MenuCanvas.SetActive(false);
-
+        SceneManager.LoadScene(0);
+        QuickSpawnController.guestStart();
     }
     public void CallGuest()
     {
