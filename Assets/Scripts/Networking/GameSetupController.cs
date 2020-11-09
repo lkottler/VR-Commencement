@@ -16,7 +16,7 @@ public class GameSetupController : MonoBehaviour
     private void CreatePlayer()
     {
         Debug.Log("Creating Player");
-        GameObject player = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Player"), new Vector3(-149.5f, 126.215f, 262.58f), Quaternion.identity);
+        GameObject player = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "OTHER_PLAYER"), new Vector3(-149.5f, 126.215f, 262.58f), Quaternion.identity);
         // TEMP, SHOULD ONLY HAVE TO NETWORK INSTANTIATE
         Instantiate(playerPrefab, new Vector3(-149.5f, 126.215f, 262.58f), Quaternion.identity);
 
