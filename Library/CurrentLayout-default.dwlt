@@ -27,8 +27,12 @@ MonoBehaviour:
     width: 1904
     height: 958
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: Game
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+  m_Title: Scene
+>>>>>>> master
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -65,8 +69,12 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 107
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+  controlID: 14
+>>>>>>> master
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -82,6 +90,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 1539
     y: 0
@@ -103,6 +112,17 @@ MonoBehaviour:
   m_Panes:
   - {fileID: 13}
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    x: 966
+    y: 0
+    width: 299
+    height: 573
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
+  m_Panes:
+  - {fileID: 13}
+>>>>>>> master
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &4
@@ -123,6 +143,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 243
     height: 653
   m_MinSize: {x: 201, y: 221}
@@ -139,6 +160,15 @@ MonoBehaviour:
   m_Panes:
   - {fileID: 14}
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    width: 239
+    height: 302
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+>>>>>>> master
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
@@ -158,6 +188,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 653
     width: 1539
     height: 294
@@ -173,6 +204,11 @@ MonoBehaviour:
     y: 538
     width: 1454
     height: 370
+=======
+    y: 302
+    width: 966
+    height: 271
+>>>>>>> master
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 12}
@@ -203,6 +239,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1920
     height: 997
   m_MinSize: {x: 875, y: 542}
@@ -211,6 +248,11 @@ MonoBehaviour:
     height: 958
   m_MinSize: {x: 875, y: 300}
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    width: 1265
+    height: 623
+  m_MinSize: {x: 875, y: 542}
+>>>>>>> master
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -243,12 +285,17 @@ MonoBehaviour:
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 20}
   m_MainToolbar: {fileID: 20}
 =======
   - {fileID: 18}
   m_MainToolbar: {fileID: 18}
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+  - {fileID: 18}
+  m_MainToolbar: {fileID: 18}
+>>>>>>> master
   m_LastLoadedLayoutName: 
 --- !u!114 &8
 MonoBehaviour:
@@ -296,6 +343,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1539
     height: 947
   m_MinSize: {x: 303, y: 342}
@@ -310,6 +358,14 @@ MonoBehaviour:
   vertical: 1
   controlID: 108
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    width: 966
+    height: 573
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 15
+>>>>>>> master
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -330,6 +386,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1539
     height: 653
   m_MinSize: {x: 303, y: 221}
@@ -344,6 +401,14 @@ MonoBehaviour:
   vertical: 0
   controlID: 109
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    width: 966
+    height: 302
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 16
+>>>>>>> master
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -359,6 +424,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 243
     y: 0
@@ -379,15 +445,26 @@ MonoBehaviour:
     y: 0
     width: 1094
     height: 538
+=======
+    x: 239
+    y: 0
+    width: 727
+    height: 302
+>>>>>>> master
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
+<<<<<<< HEAD
   m_Selected: 1
   m_LastSelected: 0
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+  m_Selected: 0
+  m_LastSelected: 1
+>>>>>>> master
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -396,6 +473,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_EditorHideFlags: 0
   m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
@@ -808,6 +886,8 @@ MonoBehaviour:
   m_Enabled: 1
 =======
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+>>>>>>> master
   m_EditorHideFlags: 1
   m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -821,6 +901,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 726
     width: 1538
@@ -831,6 +912,12 @@ MonoBehaviour:
     width: 1453
     height: 349
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    x: 7.3333335
+    y: 382
+    width: 965
+    height: 250
+>>>>>>> master
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -846,14 +933,19 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Scripts/Networking
 =======
     - Assets/Resources/PhotonPrefabs
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    - Assets/Prefabs
+>>>>>>> master
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - Assets/Scripts/Networking
   m_LastFoldersGridSize: 96
@@ -867,16 +959,26 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000563e0000583e00005a3e00005c3e000000ca9a3b
 =======
   - Assets/Resources/PhotonPrefabs
+=======
+  - Assets/Prefabs
+>>>>>>> master
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\2020-FALLCS\VR-Commencement
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 1e4f0000
     m_LastClickedID: 20254
     m_ExpandedIDs: 00000000f2400000f4400000f6400000f84000001041000000ca9a3b
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    scrollPos: {x: 0, y: 74}
+    m_SelectedIDs: 1a440000
+    m_LastClickedID: 17434
+    m_ExpandedIDs: 00000000fe4300000044000002440000044400000644000000ca9a3b
+>>>>>>> master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -905,10 +1007,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000563e0000583e00005a3e00005c3e0000
 =======
     m_ExpandedIDs: 00000000f2400000f4400000f6400000f8400000
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    m_ExpandedIDs: 00000000fe43000000440000024400000444000006440000
+>>>>>>> master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -937,10 +1043,14 @@ MonoBehaviour:
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c62300008247000000000000
 =======
     m_ExpandedInstanceIDs: c6230000
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    m_ExpandedInstanceIDs: c6230000
+>>>>>>> master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -969,10 +1079,14 @@ MonoBehaviour:
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &16
 =======
 --- !u!114 &13
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+--- !u!114 &13
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -993,6 +1107,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1539
     y: 73
     width: 380
@@ -1003,6 +1118,12 @@ MonoBehaviour:
     width: 449
     height: 887
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    x: 973.3334
+    y: 80
+    width: 297
+    height: 552
+>>>>>>> master
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -1018,10 +1139,14 @@ MonoBehaviour:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &17
 =======
 --- !u!114 &14
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+--- !u!114 &14
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1042,6 +1167,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 73
     width: 242
@@ -1052,6 +1178,12 @@ MonoBehaviour:
     width: 359
     height: 517
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    x: 7.3333335
+    y: 80
+    width: 238
+    height: 281
+>>>>>>> master
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
@@ -1059,12 +1191,16 @@ MonoBehaviour:
 <<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 5ef8ffff60f8ffff62f8ffff
 =======
       m_SelectedIDs: daf7ffff
       m_LastClickedID: 0
       m_ExpandedIDs: 78f5ffffdaf7ffff
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+      m_ExpandedIDs: 72f4ffffe6f5ffff
+>>>>>>> master
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1089,8 +1225,11 @@ MonoBehaviour:
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &18
 =======
+=======
+>>>>>>> master
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1111,10 +1250,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 368
     y: 81
     width: 1092
     height: 517
+=======
+    x: 246.66667
+    y: 80
+    width: 725
+    height: 281
+>>>>>>> master
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -1127,9 +1273,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
+=======
+    m_Target: {x: -6.521159, y: 7.4895515, z: -4.007532}
+    speed: 2
+    m_Value: {x: -6.521159, y: 7.4895515, z: -4.007532}
+>>>>>>> master
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1176,13 +1328,21 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Target: {x: 0.016744846, y: 0.9830364, z: 0.1392236, w: -0.11823373}
     speed: 2
+<<<<<<< HEAD
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
     m_Target: 10
     speed: 2
     m_Value: 10
+=======
+    m_Value: {x: 0.01692215, y: 0.9828248, z: 0.14069776, w: -0.11820829}
+  m_Size:
+    m_Target: 16.121777
+    speed: 2
+    m_Value: 15.427538
+>>>>>>> master
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1208,7 +1368,10 @@ MonoBehaviour:
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
 --- !u!114 &16
+<<<<<<< HEAD
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1229,6 +1392,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 243
     y: 73
     width: 1294
@@ -1239,6 +1403,12 @@ MonoBehaviour:
     width: 1092
     height: 517
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    x: 246.66667
+    y: 80
+    width: 725
+    height: 281
+>>>>>>> master
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1247,10 +1417,14 @@ MonoBehaviour:
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 1294, y: 611}
 =======
   m_TargetSize: {x: 1092, y: 496}
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+  m_TargetSize: {x: 1024, y: 768}
+>>>>>>> master
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1259,12 +1433,13 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 06000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_HBaseRangeMin: -647
     m_HBaseRangeMax: 647
@@ -1276,6 +1451,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -248
     m_VBaseRangeMax: 248
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    m_HBaseRangeMin: -341.33334
+    m_HBaseRangeMax: 341.33334
+    m_VBaseRangeMin: -256
+    m_VBaseRangeMax: 256
+>>>>>>> master
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1284,7 +1465,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1293,6 +1474,7 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
 <<<<<<< HEAD
       width: 1294
       height: 611
@@ -1304,12 +1486,19 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 546, y: 248}
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+      width: 725
+      height: 260
+    m_Scale: {x: 0.5078125, y: 0.5078125}
+    m_Translation: {x: 362.5, y: 130}
+>>>>>>> master
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -647
       y: -305.5
@@ -1327,16 +1516,29 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1092, y: 517}
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+      x: -713.8461
+      y: -256
+      width: 1427.6923
+      height: 512
+    m_MinimalGUI: 1
+  m_defaultScale: 0.5078125
+  m_LastWindowPixelSize: {x: 1087.5, y: 421.5}
+>>>>>>> master
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &19
 =======
 --- !u!114 &17
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+--- !u!114 &17
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1357,6 +1559,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 726
     width: 1538
@@ -1371,6 +1574,14 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &18
 >>>>>>> a543796 (Changed prefabs for multiplayer)
+=======
+    x: 7.3333335
+    y: 382
+    width: 965
+    height: 250
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &18
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
