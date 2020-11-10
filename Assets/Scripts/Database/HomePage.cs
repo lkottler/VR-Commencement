@@ -18,10 +18,14 @@ public class HomePage : MonoBehaviour
     public Button loginBtn;
     public Button regBtn;
     public Button guestBtn;
+    public bool regSuccess;
+    public bool logSuccess;
 
-    public void CallRegister()
+    public bool CallRegister()
     {
+        regSuccess = false;
         StartCoroutine(Register());
+        return regSuccess;
     }
 
     public void SpawnPlayer()
@@ -48,20 +52,24 @@ public class HomePage : MonoBehaviour
             yield return webRequest.SendWebRequest();
             if (webRequest.downloadHandler.text[0] == '0')
             {
+                regSuccess = true;
                 Debug.Log("Registration worked.");
                 SpawnPlayer();
             }
             else
             {
+                regSuccess = false;
                 Debug.Log("Registration failed. Error #" + webRequest.downloadHandler.text);
             }
         }
 
     }
 
-    public void CallLogin()
+    public bool CallLogin()
     {
+        logSuccess = false;
         StartCoroutine(Login());
+        return logSuccess;
     }
 
     IEnumerator Login()
@@ -76,11 +84,13 @@ public class HomePage : MonoBehaviour
             yield return webRequest.SendWebRequest();
             if (webRequest.downloadHandler.text[0] == '0')
             {
+                logSuccess = true;
                 Debug.Log("Login worked.");
                 SpawnPlayer();
             }
             else
             {
+                logSuccess = false;
                 Debug.Log("Login failed. Error #" + webRequest.downloadHandler.text);
             }
         }
