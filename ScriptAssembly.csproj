@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Networking\QuickSpawn.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\Scripts\Photon.asmdef" />
      <None Include="Assets\Scripts\ScriptAssembly.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.6f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

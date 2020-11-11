@@ -1,5 +1,4 @@
-﻿using Photon.Pun.Demo.Cockpit;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using UnityEngine;
@@ -9,18 +8,33 @@ using UnityEngine.UI;
 
 public class HomePage : MonoBehaviour
 {
-    public InputField regUser, regPW, regConf, logUser, logPW;
-    public GameObject MenuCanvas;
+    GameObject MenuCanvas;
+    InputField regUser, regPW, regConf, logUser, logPW;
     public QuickSpawn QuickSpawnController;
 
-    public GameObject player;
-
-    public Button loginBtn;
-    public Button regBtn;
-    public Button guestBtn;
+    Button loginBtn, regBtn, guestBtn;
     public bool regSuccess;
     public bool logSuccess;
 
+    void Start()
+    {
+        MenuCanvas = GameObject.Find("HomePageCanvas");
+
+        Transform transLog, transReg;
+        transLog = MenuCanvas.transform.GetChild(0);
+        transReg = MenuCanvas.transform.GetChild(1);
+
+        regUser = transReg.GetChild(0).GetComponent<InputField>();
+        regPW   = transReg.GetChild(1).GetComponent<InputField>();
+        regConf = transReg.GetChild(3).GetComponent<InputField>();
+
+        logUser = transLog.GetChild(0).GetComponent<InputField>();
+        logPW   = transLog.GetChild(1).GetComponent<InputField>();
+
+        loginBtn = transLog.GetComponent<Button>();
+        regBtn = transReg.GetComponent<Button>();
+        guestBtn = MenuCanvas.GetComponent<Button>();
+    }
     public bool CallRegister()
     {
         regSuccess = false;

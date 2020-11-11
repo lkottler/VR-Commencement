@@ -1,17 +1,16 @@
 sceneSetups:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 - path: Assets/Scenes/Testing.unity
   isLoaded: 1
   isActive: 0
   isSubScene: 0
+=======
+>>>>>>> Stashed changes
 - path: Assets/Scenes/LoginScene.unity
 =======
 - path: Assets/Scenes/Chancellor_test.unity
 >>>>>>> master
   isLoaded: 1
   isActive: 1
-  isSubScene: 0
-- path: Assets/Scenes/Stadium.unity
-  isLoaded: 1
-  isActive: 0
   isSubScene: 0

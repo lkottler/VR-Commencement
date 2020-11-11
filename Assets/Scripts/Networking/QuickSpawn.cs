@@ -9,8 +9,8 @@ public class QuickSpawn : MonoBehaviourPunCallbacks
     [SerializeField]
     private GameObject guestLoginButton;
 
-    [SerializeField]
-    private GameObject quitButton;
+    //[SerializeField]
+    //private GameObject quitButton;
 
     [SerializeField]
     private int RoomSize;
@@ -24,7 +24,7 @@ public class QuickSpawn : MonoBehaviourPunCallbacks
     public void guestStart()
     {
         guestLoginButton.SetActive(false);
-        quitButton.SetActive(true);
+        //quitButton.SetActive(true);
         PhotonNetwork.JoinRandomRoom();
         Debug.Log("Guest Logged in");
     }
@@ -53,7 +53,7 @@ public class QuickSpawn : MonoBehaviourPunCallbacks
 
     public void QuickQuit()
     {
-        quitButton.SetActive(false);
+        //quitButton.SetActive(false);
         //guestLoginButton.SetActive(true);
         PhotonNetwork.LeaveRoom();
     }
