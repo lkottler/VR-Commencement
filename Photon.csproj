@@ -55,10 +55,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Networking\NetworkController.cs" />
     <Compile Include="Assets\Scripts\Camera_Controller.cs" />
     <Compile Include="Assets\Scripts\SimplePeoplePlayer.cs" />
     <Compile Include="Assets\Scripts\Camera_Zoom.cs" />
     <Compile Include="Assets\Scripts\CharacterMovement.cs" />
+    <Compile Include="Assets\Scripts\Networking\QuickSpawnRoomController.cs" />
     <Compile Include="Assets\Scripts\TestConnect.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -666,10 +668,6 @@
     <ProjectReference Include="PhotonRealtime.csproj">
       <Project>{9383B3FE-199E-82C0-A1A3-F21F9698743B}</Project>
       <Name>PhotonRealtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Network.csproj">
-      <Project>{38837105-DE1A-FBDF-1D60-15F63A0E2C91}</Project>
-      <Name>Network</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

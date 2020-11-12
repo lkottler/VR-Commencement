@@ -664,10 +664,6 @@
       <Project>{3FE94911-514A-0902-9C61-BCA5F83B24BC}</Project>
       <Name>PhotonUnityNetworking.Demos</Name>
     </ProjectReference>
-    <ProjectReference Include="TestingAsm.csproj">
-      <Project>{2A465715-E82A-CFAB-B368-C8E38A98C197}</Project>
-      <Name>TestingAsm</Name>
-    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
       <Project>{AE1EE0B6-7210-715C-35FE-5D4AA1C54597}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
@@ -700,9 +696,9 @@
       <Project>{167AEBC6-6EA3-7495-5EB9-AB4E93063A20}</Project>
       <Name>Photon</Name>
     </ProjectReference>
-    <ProjectReference Include="Network.csproj">
-      <Project>{38837105-DE1A-FBDF-1D60-15F63A0E2C91}</Project>
-      <Name>Network</Name>
+    <ProjectReference Include="TestingAsm.csproj">
+      <Project>{2A465715-E82A-CFAB-B368-C8E38A98C197}</Project>
+      <Name>TestingAsm</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
