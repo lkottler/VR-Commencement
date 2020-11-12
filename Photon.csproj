@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Networking\GameSetupController.cs" />
     <Compile Include="Assets\Scripts\Networking\QuickSpawnRoomController.cs" />
     <Compile Include="Assets\Scripts\Networking\QuickSpawn.cs" />
+    <Compile Include="Assets\Scripts\Networking\UserStats.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Scripts\Networking\Photon.asmdef" />

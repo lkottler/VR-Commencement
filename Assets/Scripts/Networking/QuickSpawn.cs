@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class QuickSpawn : MonoBehaviourPunCallbacks
 {
+    string username = "Guest";
     [SerializeField]
     private Button guestLoginButton;
 
@@ -25,7 +26,6 @@ public class QuickSpawn : MonoBehaviourPunCallbacks
     public void guestStart()
     {
         guestLoginButton.interactable = true;
-        //quitButton.SetActive(true);
         PhotonNetwork.JoinRandomRoom();
         Debug.Log("Guest Logged in");
     }

@@ -123,6 +123,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &71632910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71632912}
+  m_Layer: 0
+  m_Name: UserStats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &71632912
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71632910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -155.5543, y: 125.80701, z: 268.92126}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &117867136
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guestLoginButton: {fileID: 1244664384}
-  RoomSize: 4
+  RoomSize: 10
 --- !u!4 &2099075697
 Transform:
   m_ObjectHideFlags: 0
@@ -839,12 +869,24 @@ PrefabInstance:
       value: VerifyInputs
       objectReference: {fileID: 0}
     - target: {fileID: 5405913122406069057, guid: 16f25b252991035419dfac6af281ef0d, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405913122406069057, guid: 16f25b252991035419dfac6af281ef0d, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 334911901}
     - target: {fileID: 5405913122406069057, guid: 16f25b252991035419dfac6af281ef0d, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: VerifyInputs
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405913122406069057, guid: 16f25b252991035419dfac6af281ef0d, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HomePage, Photon
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405913122406069057, guid: 16f25b252991035419dfac6af281ef0d, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5405913122790793219, guid: 16f25b252991035419dfac6af281ef0d, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -902,6 +944,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CallRegister
       objectReference: {fileID: 0}
+    - target: {fileID: 7386928502616791153, guid: 16f25b252991035419dfac6af281ef0d, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7386928502990146315, guid: 16f25b252991035419dfac6af281ef0d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -909,6 +955,10 @@ PrefabInstance:
     - target: {fileID: 7386928502990146315, guid: 16f25b252991035419dfac6af281ef0d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CallLogin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7386928502990146315, guid: 16f25b252991035419dfac6af281ef0d, type: 3}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9129378958474213366, guid: 16f25b252991035419dfac6af281ef0d, type: 3}
       propertyPath: m_AnchoredPosition.x

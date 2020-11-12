@@ -1,4 +1,4 @@
-﻿using JetBrains.Annotations;
+﻿ using JetBrains.Annotations;
 using Photon.Pun;
 using System.Collections.Specialized;
 using UnityEngine;
@@ -27,7 +27,13 @@ public class CharacterMovement : MonoBehaviour
 	
 	void BasicMovement()
     {
-        if (Input.GetKey(KeyCode.W))
+		if (myCC.isGrounded && Input.GetButton("Jump"))
+		{
+			moveDirection.y = jumpSpeed;
+		}
+		moveDirection.y -= gravity * Time.deltaTime;
+		myCC.Move(moveDirection * Time.deltaTime);
+		if (Input.GetKey(KeyCode.W))
         {
 			myCC.Move(transform.forward * Time.deltaTime * speed);
         }

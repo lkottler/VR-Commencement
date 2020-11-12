@@ -1,13 +1,13 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using System.Net;
 using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HomePage : MonoBehaviour
 {
+    GameObject userStatsObj;
+    UserStats userStats;
+
     GameObject MenuCanvas;
     public InputField regUser, regPW, regConf, logUser, logPW;
     public QuickSpawn QuickSpawnController;
@@ -18,8 +18,13 @@ public class HomePage : MonoBehaviour
 
     void Start()
     {
+        userStatsObj = GameObject.Find("UserStats");
+        UserStats userStats = userStatsObj.GetComponent<UserStats>();
+        DontDestroyOnLoad(userStatsObj);
+
         MenuCanvas = GameObject.Find("HomePageCanvas");
 
+        /* Attempting to set these by code failed
         Transform transLog, transReg;
         transLog = MenuCanvas.transform.GetChild(0);
         transReg = MenuCanvas.transform.GetChild(1);
@@ -30,16 +35,17 @@ public class HomePage : MonoBehaviour
 
         logUser = transLog.GetChild(0).GetComponent<InputField>();
         logPW   = transLog.GetChild(1).GetComponent<InputField>();
-
         loginBtn = transLog.GetComponent<Button>();
         regBtn = transReg.GetComponent<Button>();
         guestBtn = MenuCanvas.GetComponent<Button>();
+        */
     }
-    public bool CallRegister()
+    public void CallRegister()
     {
+        Debug.Log("CallRegister called");
         regSuccess = false;
         StartCoroutine(Register());
-        return regSuccess;
+        //return regSuccess;
     }
 
     public void SpawnPlayer()
@@ -56,6 +62,7 @@ public class HomePage : MonoBehaviour
 
     IEnumerator Register()
     {
+        Debug.Log("Attempting to Register");
         WWWForm form = new WWWForm();
         form.AddField("name", regUser.text);
         form.AddField("password", regPW.text);
@@ -68,6 +75,8 @@ public class HomePage : MonoBehaviour
             {
                 regSuccess = true;
                 Debug.Log("Registration worked.");
+                //TODO populate connected user's fields into their prefab before loading
+                UserStats.username = regUser.text;
                 SpawnPlayer();
             }
             else
@@ -79,11 +88,11 @@ public class HomePage : MonoBehaviour
 
     }
 
-    public bool CallLogin()
+    public void CallLogin()
     {
         logSuccess = false;
         StartCoroutine(Login());
-        return logSuccess;
+        //return logSuccess;
     }
 
     IEnumerator Login()
@@ -100,6 +109,8 @@ public class HomePage : MonoBehaviour
             {
                 logSuccess = true;
                 Debug.Log("Login worked.");
+                //TODO populate connected user's fields into their prefab before loading
+                UserStats.username = logUser.text;
                 SpawnPlayer();
             }
             else
@@ -112,8 +123,8 @@ public class HomePage : MonoBehaviour
 
     public void VerifyInputs()
     {
-        regBtn.interactable = (regPW.text != regConf.text) ? false : regUser.text.Length > 4 && regPW.text.Length > 4;
-        loginBtn.interactable = logUser.text.Length > 4 && logPW.text.Length > 4;
+        //regBtn.interactable = (regPW.text != regConf.text) ? false : regUser.text.Length > 4 && regPW.text.Length > 4;
+        //loginBtn.interactable = logUser.text.Length > 4 && logPW.text.Length > 4;
     }
 
 }

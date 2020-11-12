@@ -4,6 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
+/*
 namespace Tests
 {
     public class RegisterTest
@@ -43,3 +44,4 @@ namespace Tests
         }
     }
 }
+*/
