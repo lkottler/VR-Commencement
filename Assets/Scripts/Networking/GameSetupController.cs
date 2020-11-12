@@ -38,6 +38,6 @@ public class GameSetupController : MonoBehaviour
         player.GetComponentInChildren<AudioListener>().enabled = true;
 
         //TODO set the players name somehow
-        player.GetComponentInChildren<TextMesh>().text = "Guest";
+        player.GetComponentInChildren<TextMesh>().text = UserStats.username;
     }
 }
