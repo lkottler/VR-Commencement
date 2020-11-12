@@ -672,10 +672,6 @@
       <Project>{AE1EE0B6-7210-715C-35FE-5D4AA1C54597}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
-    <ProjectReference Include="Network.csproj">
-      <Project>{38837105-DE1A-FBDF-1D60-15F63A0E2C91}</Project>
-      <Name>Network</Name>
-    </ProjectReference>
     <ProjectReference Include="PhotonWebSocket.csproj">
       <Project>{ED18F924-692A-92FA-AAEA-A47E69F7D1D9}</Project>
       <Name>PhotonWebSocket</Name>
@@ -703,6 +699,10 @@
     <ProjectReference Include="Photon.csproj">
       <Project>{167AEBC6-6EA3-7495-5EB9-AB4E93063A20}</Project>
       <Name>Photon</Name>
+    </ProjectReference>
+    <ProjectReference Include="Network.csproj">
+      <Project>{38837105-DE1A-FBDF-1D60-15F63A0E2C91}</Project>
+      <Name>Network</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -671,10 +671,6 @@
       <Project>{38837105-DE1A-FBDF-1D60-15F63A0E2C91}</Project>
       <Name>Network</Name>
     </ProjectReference>
-    <ProjectReference Include="TestingAsm.csproj">
-      <Project>{2A465715-E82A-CFAB-B368-C8E38A98C197}</Project>
-      <Name>TestingAsm</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
