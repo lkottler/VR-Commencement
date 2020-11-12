@@ -59,12 +59,9 @@
     <Compile Include="Assets\Scripts\Camera_Controller.cs" />
     <Compile Include="Assets\Scripts\SimplePeoplePlayer.cs" />
     <Compile Include="Assets\Scripts\Camera_Zoom.cs" />
-    <Compile Include="Assets\Scripts\Database\HomePage.cs" />
     <Compile Include="Assets\Scripts\CharacterMovement.cs" />
-    <Compile Include="Assets\Scripts\Networking\GameSetupController.cs" />
     <Compile Include="Assets\Scripts\Networking\QuickSpawnRoomController.cs" />
     <Compile Include="Assets\Scripts\TestConnect.cs" />
-    <Compile Include="Assets\Scripts\Networking\QuickSpawn.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Scripts\Photon.asmdef" />

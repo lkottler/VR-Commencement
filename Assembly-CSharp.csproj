@@ -70,33 +70,6 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
-     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
-     <Compile Include="Assets\Scripts\Networking\NetworkController.cs" />
-     <Compile Include="Assets\Scripts\Camera_Controller.cs" />
-     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
-     <Compile Include="Assets\Scripts\SimplePeoplePlayer.cs" />
-     <Compile Include="Assets\Scripts\Camera_Zoom.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
-     <Compile Include="Assets\Scripts\Database\HomePage.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
-     <Compile Include="Assets\Scripts\CharacterMovement.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
-     <Compile Include="Assets\Scripts\Networking\GameSetupController.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
-     <Compile Include="Assets\cube.cs" />
-     <Compile Include="Assets\Scripts\Networking\QuickSpawnRoomController.cs" />
-     <Compile Include="Assets\Scripts\TestConnect.cs" />
-     <Compile Include="Assets\Scripts\Maggie_testPush.cs" />
-     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
-     <Compile Include="Assets\Scripts\Networking\QuickSpawn.cs" />
->>>>>>> master
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
      <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
@@ -722,6 +695,10 @@
     <ProjectReference Include="Photon.csproj">
       <Project>{167AEBC6-6EA3-7495-5EB9-AB4E93063A20}</Project>
       <Name>Photon</Name>
+    </ProjectReference>
+    <ProjectReference Include="TestingAsm.csproj">
+      <Project>{2A465715-E82A-CFAB-B368-C8E38A98C197}</Project>
+      <Name>TestingAsm</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
