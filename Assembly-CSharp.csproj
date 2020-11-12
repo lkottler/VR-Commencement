@@ -56,9 +56,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
+     <Compile Include="Assets\Scripts\ChancellorController.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
      <Compile Include="Assets\Scripts\Networking\NetworkController.cs" />
      <Compile Include="Assets\Scripts\Camera_Controller.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\Chancellor.cs" />
      <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
      <Compile Include="Assets\Scripts\SimplePeoplePlayer.cs" />
      <Compile Include="Assets\Scripts\Camera_Zoom.cs" />
@@ -69,15 +71,20 @@
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
      <Compile Include="Assets\Scripts\CharacterMovement.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
      <Compile Include="Assets\Scripts\Networking\GameSetupController.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\ButtonKeyTrigger.cs" />
      <Compile Include="Assets\cube.cs" />
      <Compile Include="Assets\Scripts\Networking\QuickSpawnRoomController.cs" />
      <Compile Include="Assets\Scripts\TestConnect.cs" />
      <Compile Include="Assets\Scripts\Maggie_testPush.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\Instruction.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
      <Compile Include="Assets\Scripts\Networking\QuickSpawn.cs" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
