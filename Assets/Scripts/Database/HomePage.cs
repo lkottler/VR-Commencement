@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class HomePage : MonoBehaviour
 {
     GameObject MenuCanvas;
-    InputField regUser, regPW, regConf, logUser, logPW;
+    public InputField regUser, regPW, regConf, logUser, logPW;
     public QuickSpawn QuickSpawnController;
 
     Button loginBtn, regBtn, guestBtn;
