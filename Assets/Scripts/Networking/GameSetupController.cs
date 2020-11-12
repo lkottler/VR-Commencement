@@ -3,22 +3,38 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using Photon.Realtime;
 
 public class GameSetupController : MonoBehaviour
 {
+    public float SpawnTime;
+    float timer;
+    bool PlayerSpawned = false;
+
     [SerializeField]
     GameObject playerPrefab;
     void Start()
     {
-        CreatePlayer();
+
     }
 
+    private void Update()
+    {
+        if (!PlayerSpawned)
+        {
+            timer += Time.deltaTime;
+            if (timer >= SpawnTime)
+            {
+                Debug.Log("CREATING A NEW PLAYER");
+                PlayerSpawned = true;
+                CreatePlayer();
+            }
+        }
+    }
     private void CreatePlayer()
     {
-        Debug.Log("Creating Player");
-        GameObject player = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "OTHER_PLAYER"), new Vector3(-149.5f, 126.215f, 262.58f), Quaternion.identity);
-        // TEMP, SHOULD ONLY HAVE TO NETWORK INSTANTIATE
-        Instantiate(playerPrefab, new Vector3(-149.5f, 126.215f, 262.58f), Quaternion.identity);
-
+        GameObject player = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PLAYER"), new Vector3(-149.5f, 127.3f, 262.58f), Quaternion.identity);
+        player.GetComponentInChildren<Camera>().enabled = true;
+        player.GetComponentInChildren<AudioListener>().enabled = true;
     }
 }

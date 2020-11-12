@@ -3,11 +3,12 @@ using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuickSpawn : MonoBehaviourPunCallbacks
 {
     [SerializeField]
-    private GameObject guestLoginButton;
+    private Button guestLoginButton;
 
     //[SerializeField]
     //private GameObject quitButton;
@@ -18,12 +19,12 @@ public class QuickSpawn : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         PhotonNetwork.AutomaticallySyncScene = true;
-        guestLoginButton.SetActive(true);
+        guestLoginButton.interactable = true;
     }
 
     public void guestStart()
     {
-        guestLoginButton.SetActive(false);
+        guestLoginButton.interactable = true;
         //quitButton.SetActive(true);
         PhotonNetwork.JoinRandomRoom();
         Debug.Log("Guest Logged in");

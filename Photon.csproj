@@ -56,15 +56,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Networking\NetworkController.cs" />
-    <Compile Include="Assets\Scripts\Camera_Controller.cs" />
-    <Compile Include="Assets\Scripts\SimplePeoplePlayer.cs" />
-    <Compile Include="Assets\Scripts\Camera_Zoom.cs" />
-    <Compile Include="Assets\Scripts\CharacterMovement.cs" />
+    <Compile Include="Assets\Scripts\Networking\HomePage.cs" />
+    <Compile Include="Assets\Scripts\Networking\GameSetupController.cs" />
     <Compile Include="Assets\Scripts\Networking\QuickSpawnRoomController.cs" />
-    <Compile Include="Assets\Scripts\TestConnect.cs" />
+    <Compile Include="Assets\Scripts\Networking\QuickSpawn.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\Scripts\Photon.asmdef" />
+     <None Include="Assets\Scripts\Networking\Photon.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.6f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

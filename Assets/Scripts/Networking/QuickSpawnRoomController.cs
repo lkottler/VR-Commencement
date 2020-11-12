@@ -4,7 +4,7 @@ using UnityEngine;
 public class QuickSpawnRoomController : MonoBehaviourPunCallbacks
 {
     [SerializeField]
-    private int multiplayerSceneIndex; // Build index of multiplayer scene
+    private int multiplayerSceneIndex = 1; // Build index of multiplayer scene
 
     public override void OnEnable()
     {

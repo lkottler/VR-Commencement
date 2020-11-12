@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Photon.Pun;
+using UnityEngine;
 
 /// <summary>
 /// Allows the player to control a character from the Synty Studios "Simple People" asset pack.
@@ -6,6 +7,7 @@
 public class SimplePeoplePlayer : MonoBehaviour
 {
     // Member variables.
+    public PhotonView photonView;
     private Animator animator;
     private bool isMoving = false;
 
@@ -29,7 +31,8 @@ public class SimplePeoplePlayer : MonoBehaviour
     public void Update()
     {
         // Process the movement input.
-        this.ProcessMovementInput();
+        if (photonView.IsMine)
+            this.ProcessMovementInput();
     }
 
     /// <summary>
@@ -37,6 +40,7 @@ public class SimplePeoplePlayer : MonoBehaviour
     /// </summary>
     private void ProcessMovementInput()
     {
+        if (photonView)
         if (this.animator != null)
         {
             // Get the movement input (if any) from the horizontal and vertical axes.
