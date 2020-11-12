@@ -95,18 +95,6 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
---- !u!114 &15390895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4770934732543826284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9504f290fecf6db47a1af56769853bc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4770934732543994914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -184,11 +172,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 000a9a1d942738948ad4b037e3f73582, type: 3}
---- !u!1 &4770934732543826284 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 177486, guid: 000a9a1d942738948ad4b037e3f73582, type: 3}
-  m_PrefabInstance: {fileID: 4770934732543994914}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4770934732544110376 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 443146, guid: 000a9a1d942738948ad4b037e3f73582, type: 3}
