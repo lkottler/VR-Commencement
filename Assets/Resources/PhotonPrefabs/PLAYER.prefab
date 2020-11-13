@@ -146,6 +146,14 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!81 &7059634161631499470
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624465554976945735}
+  m_Enabled: 1
 --- !u!114 &-2336575888302106931
 MonoBehaviour:
   m_ObjectHideFlags: 0
