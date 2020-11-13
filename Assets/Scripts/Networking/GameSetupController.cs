@@ -34,10 +34,5 @@ public class GameSetupController : MonoBehaviour
     private void CreatePlayer()
     {
         GameObject player = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PLAYER"), new Vector3(-149.5f, 127.3f, 262.58f), Quaternion.identity);
-        player.GetComponentInChildren<Camera>().enabled = true;
-        player.GetComponentInChildren<AudioListener>().enabled = true;
-
-        //TODO set the players name somehow
-        player.GetComponentInChildren<TextMesh>().text = UserStats.username;
     }
 }

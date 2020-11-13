@@ -146,14 +146,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
---- !u!81 &7059634161631499470
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 624465554976945735}
-  m_Enabled: 1
 --- !u!114 &-2336575888302106931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,6 +224,7 @@ GameObject:
   - component: {fileID: 5566762157562155882}
   - component: {fileID: 8824368548833787453}
   - component: {fileID: 8328606351541421500}
+  - component: {fileID: 8920452402814762950}
   m_Layer: 0
   m_Name: Username
   m_TagString: Untagged
@@ -317,6 +310,18 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
+--- !u!114 &8920452402814762950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2954153590235372027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f46479488adde8488ebee9c42c2d4a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &624465554977058063
 PrefabInstance:
   m_ObjectHideFlags: 0

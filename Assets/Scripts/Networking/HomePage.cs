@@ -76,7 +76,7 @@ public class HomePage : MonoBehaviour
                 regSuccess = true;
                 Debug.Log("Registration worked.");
                 //TODO populate connected user's fields into their prefab before loading
-                UserStats.username = regUser.text;
+                UserStats.setUsername(regUser.text);
                 SpawnPlayer();
             }
             else
@@ -110,7 +110,7 @@ public class HomePage : MonoBehaviour
                 logSuccess = true;
                 Debug.Log("Login worked.");
                 //TODO populate connected user's fields into their prefab before loading
-                UserStats.username = logUser.text;
+                UserStats.setUsername(logUser.text);
                 SpawnPlayer();
             }
             else

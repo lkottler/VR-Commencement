@@ -22,6 +22,10 @@ public class CharacterMovement : MonoBehaviour
     private void Start()
     {
 		PV = GetComponent<PhotonView>();
+		if (PV.IsMine){
+			GetComponentInChildren<Camera>().enabled = true;
+			GetComponentInChildren<AudioListener>().enabled = true;
+		}
 		myCC = GetComponent<CharacterController>();
     }
 	

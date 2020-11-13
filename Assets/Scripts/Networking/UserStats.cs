@@ -1,9 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Photon.Pun;
 using UnityEngine;
 
 public class UserStats : MonoBehaviour
 {
-    public static string username = "Guest";
+    private static string username = "Guest";
 
+    public static void setUsername(string name)
+    {
+        username = name;
+        Debug.Log("setting name as: " + name);
+        PhotonNetwork.LocalPlayer.NickName = name;
+    }
+    public static string getUsername() { return username; }
 }
