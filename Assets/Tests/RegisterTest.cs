@@ -4,7 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-/*
+
 namespace Tests
 {
     public class RegisterTest
@@ -23,10 +23,11 @@ namespace Tests
             string user1 = "RegTestUser";
             string pass1 = "RegTestPass";
             bool success = false;
-            HomePage home = new HomePage();
+            HomePage home = GameObject.Find("HomePage").GetComponent<HomePage>();
             home.regUser.text = user1;
             home.regPW.text = pass1;
-            success = home.CallRegister();
+            home.CallRegister();
+            success = home.regSuccess;
             Assert.True(success);
 
         }
@@ -44,4 +45,3 @@ namespace Tests
         }
     }
 }
-*/

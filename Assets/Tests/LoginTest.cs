@@ -4,7 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-/*
+
 namespace Tests
 {
     public class LoginTest
@@ -31,8 +31,8 @@ namespace Tests
             
             home.logUser.text = user1;
             home.logPW.text = pass1;
-            success = home.CallLogin();
-
+            home.CallLogin();
+            success = home.logSuccess;
             Assert.True(success);
 
             ////////////////////////////////////////////////////
@@ -46,7 +46,8 @@ namespace Tests
             home = new HomePage();
             home.logUser.text = user2;
             home.logPW.text = pass2;
-            success = home.CallLogin();
+            home.CallLogin();
+            success = home.logSuccess;
             Assert.False(success);
 
             ////////////////////////////////////////////////////
@@ -60,7 +61,8 @@ namespace Tests
             home = new HomePage();
             home.logUser.text = user3;
             home.logPW.text = pass3;
-            success = home.CallLogin();
+            home.CallLogin();
+            success = home.logSuccess;
             Assert.False(success);
 
             ////////////////////////////////////////////////////
@@ -74,7 +76,8 @@ namespace Tests
             home = new HomePage();
             home.logUser.text = user4;
             home.logPW.text = pass4;
-            success = home.CallLogin();
+            home.CallLogin();
+            success = home.logSuccess;
             Assert.False(success);
 
         }
@@ -92,4 +95,3 @@ namespace Tests
         }
     }
 }
-*/
