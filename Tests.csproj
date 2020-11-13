@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Assets\Tests\RegisterTest.cs" />
     <Compile Include="Assets\Tests\LoginTest.cs" />
+    <Compile Include="Assets\Tests\NewTestScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Tests\Tests.asmdef" />
