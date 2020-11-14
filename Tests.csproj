@@ -47,16 +47,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="Assets\Tests\RegisterTest.cs" />
-    <Compile Include="Assets\Tests\UserStatsTest.cs" />
-    <Compile Include="Assets\Tests\LoginTest.cs" />
-    <Compile Include="Assets\Tests\QuickSpawnTest.cs" />
-  </ItemGroup>
-  <ItemGroup>
-     <None Include="Assets\Tests\Tests.asmdef" />
-=======
->>>>>>> afbad8ed408d1f08b44472e00a840359f25ece25
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.6f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -65,31 +55,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <ProjectReference Include="Photon.csproj">
-      <Project>{167AEBC6-6EA3-7495-5EB9-AB4E93063A20}</Project>
-      <Name>Photon</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{5D364DB1-DBFC-4201-9CF1-16515474363E}</Project>
-      <Name>PhotonUnityNetworking</Name>
-    </ProjectReference>
-=======
      <Compile Include="Assets\Tests\RegisterTest.cs" />
-     <Compile Include="Assets\Tests\NewTestScript.cs" />
+     <Compile Include="Assets\Tests\UserStatsTest.cs" />
      <Compile Include="Assets\Tests\LoginTest.cs" />
+     <Compile Include="Assets\Tests\QuickSpawnTest.cs" />
      <None Include="Assets\Tests\Tests.asmdef" />
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>C:/Users/Rose/Documents/GitHub/VR-Commencement/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>C:/Users/dingz/Dropbox/cs506/VR-Commencement/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>C:/Users/Rose/Documents/GitHub/VR-Commencement/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>C:/Users/dingz/Dropbox/cs506/VR-Commencement/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Rose/Documents/GitHub/VR-Commencement/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/dingz/Dropbox/cs506/VR-Commencement/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Rose/Documents/GitHub/VR-Commencement/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/dingz/Dropbox/cs506/VR-Commencement/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -277,11 +258,14 @@
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Users/Rose/Documents/GitHub/VR-Commencement/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>C:/Users/dingz/Dropbox/cs506/VR-Commencement/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -628,7 +612,16 @@
  <Reference Include="System.Xml.XPath.XDocument">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
  </Reference>
->>>>>>> afbad8ed408d1f08b44472e00a840359f25ece25
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Photon.csproj">
+      <Project>{05E4DEDB-5DC3-1F83-F74B-0A5EDE3C8B63}</Project>
+      <Name>Photon</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.csproj">
+      <Project>{185A648B-2C08-2391-8BE4-9C1AF56C8590}</Project>
+      <Name>PhotonUnityNetworking</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
