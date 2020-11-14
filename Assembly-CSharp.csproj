@@ -56,10 +56,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Dialogue\ColliderAndTrigger.cs" />
+     <Compile Include="Assets\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
+     <Compile Include="Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
+     <Compile Include="Assets\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
      <Compile Include="Assets\Scripts\Camera_Controller.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+     <Compile Include="Assets\ParticleSystems\Scripts\Hose.cs" />
      <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
      <Compile Include="Assets\Scripts\SimplePeoplePlayer.cs" />
      <Compile Include="Assets\Scripts\Camera_Zoom.cs" />
@@ -79,9 +83,12 @@
      <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
      <Compile Include="Assets\Scripts\Dialogue\UserDiplomaText.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
+     <Compile Include="Assets\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+     <Compile Include="Assets\ParticleSystems\Scripts\FireLight.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
      <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
+     <Compile Include="Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
@@ -99,8 +106,10 @@
      <Compile Include="Assets\Scripts\Dialogue\Chancellor.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\Scripts\Dialogue\DiplomaImage.cs" />
+     <Compile Include="Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
      <Compile Include="Assets\Scripts\TestConnect.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -133,11 +142,15 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
