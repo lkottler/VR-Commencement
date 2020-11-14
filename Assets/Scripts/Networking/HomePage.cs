@@ -12,9 +12,24 @@ public class HomePage : MonoBehaviour
     public InputField regUser, regPW, regConf, logUser, logPW;
     public QuickSpawn QuickSpawnController;
 
-    public  Button loginBtn, regBtn, guestBtn;
+    public Button loginBtn, regBtn, guestBtn;
     public bool regSuccess;
     public bool logSuccess;
+    public static HomePage m_Instance = null;
+    public static HomePage Instance
+    {
+        get
+        {
+            if (m_Instance == null)
+                m_Instance = (HomePage)FindObjectOfType(typeof(HomePage));
+            return m_Instance;
+        }
+    }
+
+    void Awake()
+    {
+        m_Instance = this;    
+    }
 
     void Start()
     {
@@ -43,9 +58,7 @@ public class HomePage : MonoBehaviour
     public void CallRegister()
     {
         Debug.Log("CallRegister called");
-        regSuccess = false;
         StartCoroutine(Register());
-        //return regSuccess;
     }
 
     public void SpawnPlayer()
@@ -67,10 +80,12 @@ public class HomePage : MonoBehaviour
         form.AddField("name", regUser.text);
         form.AddField("password", regPW.text);
         string url = "http://pages.cs.wisc.edu/~lkottler/commencement/register"; //TODO
-
+        Debug.Log("Database starting");
+        regSuccess = true;
         using (UnityWebRequest webRequest = UnityWebRequest.Post(url, form))
         {
             yield return webRequest.SendWebRequest();
+            Debug.Log("Database returned");
             if (webRequest.downloadHandler.text[0] == '0')
             {
                 regSuccess = true;
@@ -90,9 +105,7 @@ public class HomePage : MonoBehaviour
 
     public void CallLogin()
     {
-        logSuccess = false;
         StartCoroutine(Login());
-        //return logSuccess;
     }
 
     IEnumerator Login()
@@ -101,7 +114,7 @@ public class HomePage : MonoBehaviour
         form.AddField("name", logUser.text);
         form.AddField("password", logPW.text);
         string url = "http://pages.cs.wisc.edu/~lkottler/commencement/login"; //TODO
-
+        logSuccess = true;
         using (UnityWebRequest webRequest = UnityWebRequest.Post(url, form))
         {
             yield return webRequest.SendWebRequest();

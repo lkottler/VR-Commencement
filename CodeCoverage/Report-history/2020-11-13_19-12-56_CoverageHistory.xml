@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2020-11-13_19-12-56" tag="">
+  <assembly name="Photon">
+    <class name="GameSetupController" coveredlines="0" coverablelines="10" totallines="38" coveredbranches="0" totalbranches="0" />
+    <class name="HomePage" coveredlines="24" coverablelines="57" totallines="143" coveredbranches="0" totalbranches="0" />
+    <class name="Nametag" coveredlines="0" coverablelines="3" totallines="15" coveredbranches="0" totalbranches="0" />
+    <class name="NetworkController" coveredlines="0" coverablelines="5" totallines="32" coveredbranches="0" totalbranches="0" />
+    <class name="QuickSpawn" coveredlines="1" coverablelines="23" totallines="67" coveredbranches="0" totalbranches="0" />
+    <class name="QuickSpawnRoomController" coveredlines="1" coverablelines="12" totallines="34" coveredbranches="0" totalbranches="0" />
+    <class name="UserStats" coveredlines="0" coverablelines="12" totallines="29" coveredbranches="0" totalbranches="0" />
+  </assembly>
+</coverage>

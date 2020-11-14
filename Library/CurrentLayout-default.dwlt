@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 390
-    y: 42.666668
-    width: 890
-    height: 637.3334
+    x: 0
+    y: 43
+    width: 1920
+    height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -43,12 +43,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 890
-    height: 587.3334
-  m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+    width: 1920
+    height: 947
+  m_MinSize: {x: 579, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 128
+  controlID: 45
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,15 +64,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 615.3333
+    x: 1415
     y: 0
-    width: 274.6667
-    height: 587.3334
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
+    width: 505
+    height: 947
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 14}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &4
@@ -92,13 +92,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 200
-    height: 288.66666
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
+    width: 201
+    height: 676
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
@@ -117,15 +117,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 288.66666
-    width: 615.3333
-    height: 298.66672
+    y: 676
+    width: 1415
+    height: 271
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 13}
-  - {fileID: 18}
+  - {fileID: 16}
+  - {fileID: 21}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &6
@@ -148,8 +148,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 890
-    height: 637.3334
+    width: 1920
+    height: 997
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -173,13 +173,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 890
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
-  - {fileID: 19}
-  m_MainToolbar: {fileID: 19}
+  - {fileID: 22}
+  m_MainToolbar: {fileID: 22}
   m_LastLoadedLayoutName: 
 --- !u!114 &8
 MonoBehaviour:
@@ -197,8 +197,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 617.3334
-    width: 890
+    y: 977
+    width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -221,12 +221,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 615.3333
-    height: 587.3334
-  m_MinSize: {x: 402, y: 492}
+    width: 1415
+    height: 947
+  m_MinSize: {x: 303, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 16
+  controlID: 106
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -246,12 +246,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 615.3333
-    height: 288.66666
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+    width: 1415
+    height: 676
+  m_MinSize: {x: 303, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 17
+  controlID: 79
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -262,25 +262,532 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 200
+    x: 201
     y: 0
-    width: 415.3333
-    height: 288.66666
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 16}
+    width: 1214
+    height: 676
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 16}
+  - {fileID: 19}
+  - {fileID: 15}
+  - {fileID: 20}
+  - {fileID: 14}
+  - {fileID: 13}
   - {fileID: 12}
-  - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 3
+  m_LastSelected: 5
 --- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5115ff20f1ea204dac14fa49c0e8f69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 445, y: 365}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Code Coverage
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 201
+    y: 73
+    width: 1212
+    height: 655
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13953, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 800, y: 250}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Package Manager
+    m_Image: {fileID: -2824328813065806953, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 201
+    y: 73
+    width: 1212
+    height: 655
+  m_ViewDataDictionary: {fileID: 0}
+  m_SplitPaneLeftWidth: 300
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 201
+    y: 73
+    width: 1212
+    height: 655
+  m_ViewDataDictionary: {fileID: 0}
+  m_Spl:
+    ID: 152
+    splitterInitialOffset: 0
+    currentActiveSplitter: -1
+    realSizes:
+    - 439
+    - 146
+    relativeSizes:
+    - 0.75
+    - 0.25
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 585
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 
+    oldMinSizes: 
+    oldMaxSizes: 
+    oldSplitSize: 0
+  m_TestTypeToolbarIndex: 1
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 14}
+    newResultList:
+    - id: 1003
+      uniqueId: '[Virtual_Commencement][suite]'
+      name: Virtual_Commencement
+      fullName: Virtual_Commencement
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: b7f5aaceffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 14}
+    newResultList:
+    - id: 1000
+      uniqueId: '[Virtual_Commencement][suite]'
+      name: Virtual_Commencement
+      fullName: Virtual_Commencement
+      resultStatus: 2
+      duration: 0.4006829
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1004
+      uniqueId: '[Tests.dll][suite]'
+      name: Tests.dll
+      fullName: C:/Users/Logan Sisel/Documents/GitHub/VR-Commencement/Library/ScriptAssemblies/Tests.dll
+      resultStatus: 2
+      duration: 0.2206783
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Virtual_Commencement][suite]'
+    - id: 1005
+      uniqueId: Tests.dll/[Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 2
+      duration: 0.2101304
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: '[Tests.dll][suite]'
+    - id: 1001
+      uniqueId: Tests.dll/Tests/[Tests][Tests.LoginTest][suite]
+      name: LoginTest
+      fullName: Tests.LoginTest
+      resultStatus: 2
+      duration: 0.1003521
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1011
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1002
+      uniqueId: Tests.dll/Tests/LoginTest/[Tests][Tests.LoginTest.LoginTestSimplePasses]
+      name: LoginTestSimplePasses
+      fullName: Tests.LoginTest.LoginTestSimplePasses
+      resultStatus: 2
+      duration: 0.0576375
+      messages: "  Expected: False\r\n  But was:  True\r\n"
+      output: 
+      stacktrace: 'at Tests.LoginTest.LoginTestSimplePasses () [0x00096] in C:\Users\Logan
+        Sisel\Documents\GitHub\VR-Commencement\Assets\Tests\LoginTest.cs:45
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.LoginTest][suite]
+    - id: 1003
+      uniqueId: Tests.dll/Tests/LoginTest/[Tests][Tests.LoginTest.LoginTestWithEnumeratorPasses]
+      name: LoginTestWithEnumeratorPasses
+      fullName: Tests.LoginTest.LoginTestWithEnumeratorPasses
+      resultStatus: 1
+      duration: 0.0185408
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.LoginTest][suite]
+    - id: 1004
+      uniqueId: Tests.dll/Tests/[Tests][Tests.QuickSpawnTest][suite]
+      name: QuickSpawnTest
+      fullName: Tests.QuickSpawnTest
+      resultStatus: 2
+      duration: 0.0268281
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1014
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1005
+      uniqueId: Tests.dll/Tests/QuickSpawnTest/[Tests][Tests.QuickSpawnTest.QuickSpawnTestSimplePasses]
+      name: QuickSpawnTestSimplePasses
+      fullName: Tests.QuickSpawnTest.QuickSpawnTestSimplePasses
+      resultStatus: 2
+      duration: 0.0047554
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 
+      stacktrace: "  at Photon.Pun.PhotonNetwork.JoinRandomRoom (ExitGames.Client.Photon.Hashtable
+        expectedCustomRoomProperties, System.Byte expectedMaxPlayers, Photon.Realtime.MatchmakingMode
+        matchingType, Photon.Realtime.TypedLobby typedLobby, System.String sqlLobbyFilter,
+        System.String[] expectedUsers) [0x0003e] in C:\\Users\\Logan Sisel\\Documents\\GitHub\\VR-Commencement\\Assets\\Photon\\PhotonUnityNetworking\\Code\\PhotonNetwork.cs:1598
+        \r\n  at Photon.Pun.PhotonNetwork.JoinRandomRoom () [0x00001] in C:\\Users\\Logan
+        Sisel\\Documents\\GitHub\\VR-Commencement\\Assets\\Photon\\PhotonUnityNetworking\\Code\\PhotonNetwork.cs:1534
+        \r\n  at QuickSpawn.guestStart () [0x0000e] in C:\\Users\\Logan Sisel\\Documents\\GitHub\\VR-Commencement\\Assets\\Scripts\\Networking\\QuickSpawn.cs:44
+        \r\n  at Tests.QuickSpawnTest.QuickSpawnTestSimplePasses () [0x00003] in
+        C:\\Users\\Logan Sisel\\Documents\\GitHub\\VR-Commencement\\Assets\\Tests\\QuickSpawnTest.cs:17
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <fb001e01371b4adca20013e0ac763896>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.QuickSpawnTest][suite]
+    - id: 1006
+      uniqueId: Tests.dll/Tests/QuickSpawnTest/[Tests][Tests.QuickSpawnTest.QuickSpawnTestWithEnumeratorPasses]
+      name: QuickSpawnTestWithEnumeratorPasses
+      fullName: Tests.QuickSpawnTest.QuickSpawnTestWithEnumeratorPasses
+      resultStatus: 1
+      duration: 0.0124609
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.QuickSpawnTest][suite]
+    - id: 1007
+      uniqueId: Tests.dll/Tests/[Tests][Tests.RegisterTest][suite]
+      name: RegisterTest
+      fullName: Tests.RegisterTest
+      resultStatus: 2
+      duration: 0.0421365
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1011
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1008
+      uniqueId: Tests.dll/Tests/RegisterTest/[Tests][Tests.RegisterTest.RegisterTestSimplePasses]
+      name: RegisterTestSimplePasses
+      fullName: Tests.RegisterTest.RegisterTestSimplePasses
+      resultStatus: 2
+      duration: 0.0145091
+      messages: "  Expected: False\r\n  But was:  True\r\n"
+      output: 'CallRegister called
+
+        Attempting to Register
+
+        Database
+        starting
+
+        CallRegister called
+
+        Attempting to Register
+
+        Database
+        starting
+
+'
+      stacktrace: 'at Tests.RegisterTest.RegisterTestSimplePasses () [0x00096] in
+        C:\Users\Logan Sisel\Documents\GitHub\VR-Commencement\Assets\Tests\RegisterTest.cs:47
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.RegisterTest][suite]
+    - id: 1009
+      uniqueId: Tests.dll/Tests/RegisterTest/[Tests][Tests.RegisterTest.RegisterTestWithEnumeratorPasses]
+      name: RegisterTestWithEnumeratorPasses
+      fullName: Tests.RegisterTest.RegisterTestWithEnumeratorPasses
+      resultStatus: 1
+      duration: 0.01986
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.RegisterTest][suite]
+    - id: 1007
+      uniqueId: Tests.dll/Tests/[Tests][Tests.UserStatsTest][suite]
+      name: UserStatsTest
+      fullName: Tests.UserStatsTest
+      resultStatus: 2
+      duration: 0.0286882
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1011
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1008
+      uniqueId: Tests.dll/Tests/UserStatsTest/[Tests][Tests.UserStatsTest.UserStatsTestSimplePasses]
+      name: UserStatsTestSimplePasses
+      fullName: Tests.UserStatsTest.UserStatsTestSimplePasses
+      resultStatus: 2
+      duration: 0.0065087
+      messages: 'System.NullReferenceException : Object reference not set to an instance
+        of an object'
+      output: 'setting name as: JoeShmoe
+
+'
+      stacktrace: "  at UserStats.setUsername (System.String name) [0x00018] in C:\\Users\\Logan
+        Sisel\\Documents\\GitHub\\VR-Commencement\\Assets\\Scripts\\Networking\\UserStats.cs:26
+        \r\n  at Tests.UserStatsTest.UserStatsTestSimplePasses () [0x0001b] in C:\\Users\\Logan
+        Sisel\\Documents\\GitHub\\VR-Commencement\\Assets\\Tests\\UserStatsTest.cs:28
+        \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+        at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x00032] in <fb001e01371b4adca20013e0ac763896>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.UserStatsTest][suite]
+    - id: 1009
+      uniqueId: Tests.dll/Tests/UserStatsTest/[Tests][Tests.UserStatsTest.UserStatsTestWithEnumeratorPasses]
+      name: UserStatsTestWithEnumeratorPasses
+      fullName: Tests.UserStatsTest.UserStatsTestWithEnumeratorPasses
+      resultStatus: 1
+      duration: 0.0150732
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1007
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.UserStatsTest][suite]
+    m_ResultText: "QuickSpawnTestSimplePasses (0.005s)\n---\nSystem.NullReferenceException
+      : Object reference not set to an instance of an object\n---\nat Photon.Pun.PhotonNetwork.JoinRandomRoom
+      (ExitGames.Client.Photon.Hashtable expectedCustomRoomProperties, System.Byte
+      expectedMaxPlayers, Photon.Realtime.MatchmakingMode matchingType, Photon.Realtime.TypedLobby
+      typedLobby, System.String sqlLobbyFilter, System.String[] expectedUsers) [0x0003e]
+      in C:\\Users\\Logan Sisel\\Documents\\GitHub\\VR-Commencement\\Assets\\Photon\\PhotonUnityNetworking\\Code\\PhotonNetwork.cs:1598
+      \r\n  at Photon.Pun.PhotonNetwork.JoinRandomRoom () [0x00001] in C:\\Users\\Logan
+      Sisel\\Documents\\GitHub\\VR-Commencement\\Assets\\Photon\\PhotonUnityNetworking\\Code\\PhotonNetwork.cs:1534
+      \r\n  at QuickSpawn.guestStart () [0x0000e] in C:\\Users\\Logan Sisel\\Documents\\GitHub\\VR-Commencement\\Assets\\Scripts\\Networking\\QuickSpawn.cs:44
+      \r\n  at Tests.QuickSpawnTest.QuickSpawnTestSimplePasses () [0x00003] in C:\\Users\\Logan
+      Sisel\\Documents\\GitHub\\VR-Commencement\\Assets\\Tests\\QuickSpawnTest.cs:17
+      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <fb001e01371b4adca20013e0ac763896>:0"
+    m_ResultStacktrace: "  at Photon.Pun.PhotonNetwork.JoinRandomRoom (ExitGames.Client.Photon.Hashtable
+      expectedCustomRoomProperties, System.Byte expectedMaxPlayers, Photon.Realtime.MatchmakingMode
+      matchingType, Photon.Realtime.TypedLobby typedLobby, System.String sqlLobbyFilter,
+      System.String[] expectedUsers) [0x0003e] in C:\\Users\\Logan Sisel\\Documents\\GitHub\\VR-Commencement\\Assets\\Photon\\PhotonUnityNetworking\\Code\\PhotonNetwork.cs:1598
+      \r\n  at Photon.Pun.PhotonNetwork.JoinRandomRoom () [0x00001] in C:\\Users\\Logan
+      Sisel\\Documents\\GitHub\\VR-Commencement\\Assets\\Photon\\PhotonUnityNetworking\\Code\\PhotonNetwork.cs:1534
+      \r\n  at QuickSpawn.guestStart () [0x0000e] in C:\\Users\\Logan Sisel\\Documents\\GitHub\\VR-Commencement\\Assets\\Scripts\\Networking\\QuickSpawn.cs:44
+      \r\n  at Tests.QuickSpawnTest.QuickSpawnTestSimplePasses () [0x00003] in C:\\Users\\Logan
+      Sisel\\Documents\\GitHub\\VR-Commencement\\Assets\\Tests\\QuickSpawnTest.cs:17
+      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <fb001e01371b4adca20013e0ac763896>:0 "
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 142bab38
+      m_LastClickedID: 950741780
+      m_ExpandedIDs: c112f397b7f5aaceffc9e5f4e557abf78359db41364eb15b7dc7445e4821787cffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -296,7 +803,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Animator
-    m_Image: {fileID: 1711060831702674872, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -375,7 +882,7 @@ MonoBehaviour:
   m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &13
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -391,14 +898,14 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 390
-    y: 361.33334
-    width: 614.3333
-    height: 277.66672
+    x: 0
+    y: 749
+    width: 1414
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -413,21 +920,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Dialogue
+    - Assets/Tests
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Dialogue
+  - Assets/Tests
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\dingz\Dropbox\cs506\VR-Commencement
+  m_LastProjectPath: C:\Users\Logan Sisel\Documents\GitHub\VR-Commencement
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 94.33328}
-    m_SelectedIDs: 50a00000
-    m_LastClickedID: 41040
-    m_ExpandedIDs: 000000002ea0000030a0000032a0000034a0000036a0000000ca9a3b
+    scrollPos: {x: 0, y: 222}
+    m_SelectedIDs: ba410000
+    m_LastClickedID: 16826
+    m_ExpandedIDs: 0000000086410000884100008a4100008c4100008e41000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -455,7 +962,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002ea0000030a0000032a0000034a0000036a00000
+    m_ExpandedIDs: 0000000086410000884100008a4100008c4100008e410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -511,7 +1018,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &14
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -527,14 +1034,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1005.3334
-    y: 72.66667
-    width: 273.6667
-    height: 566.3334
+    x: 1415
+    y: 73
+    width: 504
+    height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -543,13 +1050,13 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 679.33325
+  m_LastVerticalScrollValue: 0
   m_AssetGUID: 
   m_InstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &15
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -565,35 +1072,35 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 390
-    y: 72.66667
-    width: 199
-    height: 267.66666
+    x: 0
+    y: 73
+    width: 200
+    height: 655
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0ab4feff
-      m_LastClickedID: -84982
-      m_ExpandedIDs: 58b3feff5ab3feff5eb3feff60b3feff62b3feff66b3feff6ab3feff6cb3feff6eb3feff70b3feff72b3feff74b3feff76b3feff98b3feff9cb3feffa0b3feffc6b3feff0ab4feff26b4feff42b4feff44b4feff54b4feff64b4feff34b7feff5eb9feffb2c0feffdac2feff60cffeffe0d9feff88e3feff98e3feff18eafefffaecfeff42c7000050c700005ac7000064c700006ec7000076c7000098c70000a4c70000bec70000f0c70000fac700001ec8000036c8000072c8000090c800009cc80000aec80000b8c80000c2c80000e4c80000fac8000022c90000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: cee3ffff5ee7ffff80eaffff04eeffff0af1ffff26f4ffffdaf7ffff58fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: stage
-        m_OriginalName: stage
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -85184
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -603,7 +1110,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &16
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -619,14 +1126,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 590
-    y: 72.66667
-    width: 413.3333
-    height: 267.66666
+    x: 201
+    y: 73
+    width: 1187
+    height: 655
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -639,9 +1146,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -147.28236, y: 125.67143, z: 86.71386}
+    m_Target: {x: -149.5954, y: 129.02328, z: 262.9785}
     speed: 2
-    m_Value: {x: -147.28236, y: 125.67143, z: 86.71386}
+    m_Value: {x: -149.5954, y: 129.02328, z: 262.9785}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -688,13 +1195,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.052720927, y: -0.92648745, z: 0.14174064, w: 0.34461972}
+    m_Target: {x: 0.043225564, y: -0.92910707, z: 0.11515215, w: 0.34877053}
     speed: 2
-    m_Value: {x: 0.053452108, y: -0.92575055, z: 0.14304936, w: 0.34592727}
+    m_Value: {x: 0.043225363, y: -0.9291028, z: 0.115151614, w: 0.34876892}
   m_Size:
-    m_Target: 13.191487
+    m_Target: 4.824745
     speed: 2
-    m_Value: 12.623433
+    m_Value: 4.824745
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -719,7 +1226,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &17
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -735,14 +1242,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 590
-    y: 72.66667
-    width: 413.3333
-    height: 267.66666
+    x: 201
+    y: 73
+    width: 1212
+    height: 655
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -765,10 +1272,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -341.33334
-    m_HBaseRangeMax: 341.33334
-    m_VBaseRangeMin: -256
-    m_VBaseRangeMax: 256
+    m_HBaseRangeMin: -512
+    m_HBaseRangeMax: 512
+    m_VBaseRangeMin: -384
+    m_VBaseRangeMax: 384
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -777,7 +1284,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -786,29 +1293,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 413.3333
-      height: 246.66666
-    m_Scale: {x: 0.4817708, y: 0.4817708}
-    m_Translation: {x: 206.66666, y: 123.33333}
+      width: 1212
+      height: 634
+    m_Scale: {x: 0.8255208, y: 0.8255208}
+    m_Translation: {x: 606, y: 317}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -428.97296
-      y: -256
-      width: 857.9459
-      height: 512
+      x: -734.08203
+      y: -384
+      width: 1468.1641
+      height: 768
     m_MinimalGUI: 1
-  m_defaultScale: 0.4817708
-  m_LastWindowPixelSize: {x: 620, y: 401.5}
+  m_defaultScale: 0.8255208
+  m_LastWindowPixelSize: {x: 1212, y: 655}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &18
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -824,16 +1331,16 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 390
-    y: 361.33334
-    width: 614.3333
-    height: 277.66672
+    x: 0
+    y: 749
+    width: 1414
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &19
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
