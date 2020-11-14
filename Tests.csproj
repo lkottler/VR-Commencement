@@ -56,8 +56,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Tests\RegisterTest.cs" />
+    <Compile Include="Assets\Tests\UserStatsTest.cs" />
     <Compile Include="Assets\Tests\LoginTest.cs" />
-    <Compile Include="Assets\Tests\NewTestScript.cs" />
+    <Compile Include="Assets\Tests\QuickSpawnTest.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Tests\Tests.asmdef" />
@@ -627,6 +628,10 @@
     <ProjectReference Include="Photon.csproj">
       <Project>{167AEBC6-6EA3-7495-5EB9-AB4E93063A20}</Project>
       <Name>Photon</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.csproj">
+      <Project>{5D364DB1-DBFC-4201-9CF1-16515474363E}</Project>
+      <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

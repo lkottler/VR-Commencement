@@ -15,20 +15,36 @@ namespace Tests
         {
             // Use the Assert class to test conditions
 
-            ///////////////////////////////
-            // TEST 1: SIMPLE USER
-            ///////////////////////////////
+            //GameObject gameObj = new GameObject("HomePage");
+            //HomePage home = gameObj.AddComponent<HomePage>();
+
+            //////////////////////////////////////////////////
+            // TEST 1: create valid new user
+            //////////////////////////////////////////////////
 
             // Call registration method with input 
-            string user1 = "RegTestUser";
-            string pass1 = "RegTestPass";
-            bool success = false;
-            HomePage home = GameObject.Find("HomePage").GetComponent<HomePage>();
-            home.regUser.text = user1;
-            home.regPW.text = pass1;
-            home.CallRegister();
-            success = home.regSuccess;
+            string user1 = "RegTestUserNEW";
+            string pass1 = "RegTestPassNEW";
+            bool success = true;
+            HomePage.Instance.regUser.text = user1;
+            HomePage.Instance.regPW.text = pass1;
+            HomePage.Instance.CallRegister();
+            success = HomePage.Instance.regSuccess;
             Assert.True(success);
+
+            /////////////////////////////////////////////////////////
+            // TEST 2: create invalid new user, user already exists
+            /////////////////////////////////////////////////////////
+
+            // Call registration method with input 
+            string user2 = "RegTestUserNEW";
+            string pass2 = "RegTestPassNEW";
+            success = false;
+            HomePage.Instance.regUser.text = user2;
+            HomePage.Instance.regPW.text = pass2;
+            HomePage.Instance.CallRegister();
+            success = HomePage.Instance.regSuccess;
+            Assert.False(success);
 
         }
 

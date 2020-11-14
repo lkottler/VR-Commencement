@@ -13,9 +13,6 @@ namespace Tests
         [Test]
         public void LoginTestSimplePasses()
         {
-            // Use the Assert class to test conditions
-            // Ex: Assert.AreEqual("hello", "hello");
-
             // NOTE: Starts with known user in database,
             // fails if user doesn't already exsist
 
@@ -26,13 +23,11 @@ namespace Tests
             // Call login method with input
             string user1 = "RegTestUser";
             string pass1 = "RegTestPass";
-            bool success = false;
-            HomePage home = new HomePage();
-            
-            home.logUser.text = user1;
-            home.logPW.text = pass1;
-            home.CallLogin();
-            success = home.logSuccess;
+            bool success = true;
+            HomePage.Instance.logUser.text = user1;
+            HomePage.Instance.logPW.text = pass1;
+            HomePage.Instance.CallLogin();
+            success = HomePage.Instance.logSuccess;
             Assert.True(success);
 
             ////////////////////////////////////////////////////
@@ -42,12 +37,11 @@ namespace Tests
             // Call login method with input
             string user2 = "RegTestUser";
             string pass2 = "RegTestPassBad";
-            success = true;
-            home = new HomePage();
-            home.logUser.text = user2;
-            home.logPW.text = pass2;
-            home.CallLogin();
-            success = home.logSuccess;
+            success = false;
+            HomePage.Instance.logUser.text = user2;
+            HomePage.Instance.logPW.text = pass2;
+            HomePage.Instance.CallLogin();
+            success = HomePage.Instance.logSuccess;
             Assert.False(success);
 
             ////////////////////////////////////////////////////
@@ -57,12 +51,11 @@ namespace Tests
             // Call login method with input
             string user3 = "RegTestUserBad";
             string pass3 = "RegTestPass";
-            success = true;
-            home = new HomePage();
-            home.logUser.text = user3;
-            home.logPW.text = pass3;
-            home.CallLogin();
-            success = home.logSuccess;
+            success = false;
+            HomePage.Instance.logUser.text = user3;
+            HomePage.Instance.logPW.text = pass3;
+            HomePage.Instance.CallLogin();
+            success = HomePage.Instance.logSuccess;
             Assert.False(success);
 
             ////////////////////////////////////////////////////
@@ -72,12 +65,11 @@ namespace Tests
             // Call login method with input
             string user4 = "RegTestUserBad";
             string pass4 = "RegTestPassBad";
-            success = true;
-            home = new HomePage();
-            home.logUser.text = user4;
-            home.logPW.text = pass4;
-            home.CallLogin();
-            success = home.logSuccess;
+            success = false;
+            HomePage.Instance.logUser.text = user4;
+            HomePage.Instance.logPW.text = pass4;
+            HomePage.Instance.CallLogin();
+            success = HomePage.Instance.logSuccess;
             Assert.False(success);
 
         }

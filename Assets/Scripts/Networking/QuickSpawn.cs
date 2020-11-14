@@ -16,6 +16,21 @@ public class QuickSpawn : MonoBehaviourPunCallbacks
 
     [SerializeField]
     private int RoomSize;
+    public static QuickSpawn m_Instance = null;
+    public static QuickSpawn Instance
+    {
+        get
+        {
+            if (m_Instance == null)
+                m_Instance = (QuickSpawn)FindObjectOfType(typeof(QuickSpawn));
+            return m_Instance;
+        }
+    }
+
+    void Awake()
+    {
+        m_Instance = this;
+    }
 
     public override void OnConnectedToMaster()
     {
