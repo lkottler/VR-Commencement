@@ -49,12 +49,12 @@ MonoBehaviour:
   regConf: {fileID: 5405913122790793219}
   logUser: {fileID: 5405913122406069057}
   logPW: {fileID: 5405913122087628735}
-  MenuCanvas: {fileID: 2867190439910949055}
-  player: {fileID: 624465554976945735, guid: 3b5a03d01f86fa847a2c923e73ad9f0b, type: 3}
-  loginCam: {fileID: 0}
+  QuickSpawnController: {fileID: 0}
   loginBtn: {fileID: 7386928502990146315}
   regBtn: {fileID: 7386928502616791153}
   guestBtn: {fileID: 7386928501788130686}
+  regSuccess: 0
+  logSuccess: 0
 --- !u!1001 &7149650696392976364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -189,11 +189,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 4968288348615042892, guid: 36ec7b16fceea7840a3fa465d40cf08f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36ec7b16fceea7840a3fa465d40cf08f, type: 3}
---- !u!1 &2867190439910949055 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4968288348615042899, guid: 36ec7b16fceea7840a3fa465d40cf08f, type: 3}
-  m_PrefabInstance: {fileID: 7149650696392976364}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2867190439910949027 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4968288348615042895, guid: 36ec7b16fceea7840a3fa465d40cf08f, type: 3}
