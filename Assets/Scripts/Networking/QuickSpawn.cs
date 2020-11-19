@@ -41,10 +41,12 @@ public class QuickSpawn : MonoBehaviourPunCallbacks
     public void guestStart()
     {
         guestLoginButton.interactable = true;
-        PhotonNetwork.JoinRandomRoom();
+        //PhotonNetwork.JoinRandomRoom();
+        PhotonNetwork.JoinRoom("Commencement");
         Debug.Log("Guest Logged in");
     }
 
+    // This function is primarily depricated after now joining the specific room
     public override void OnJoinRandomFailed(short returnCode, string message)
     {
         Debug.Log("Failed to join existing room");
@@ -54,10 +56,11 @@ public class QuickSpawn : MonoBehaviourPunCallbacks
     void CreateRoom() //creates a new room for multiplayer
     {
         Debug.Log("Creating a new room");
-        int randomRoomNumber = Random.Range(0, 10000); // random number for room index
+        //int randomRoomNumber = Random.Range(0, 10000); // random number for room index
         RoomOptions roomOps = new RoomOptions() { IsVisible = true, IsOpen = true, MaxPlayers = (byte)RoomSize };
-        PhotonNetwork.CreateRoom("Room" + randomRoomNumber, roomOps);
-        Debug.Log(randomRoomNumber);
+        //PhotonNetwork.CreateRoom("Room" + randomRoomNumber, roomOps);
+        PhotonNetwork.CreateRoom("Commencement", roomOps);
+        Debug.Log("Created room: Commencement");
     }
 
     // This probably fails if the Random room number selected already exists as a room.
