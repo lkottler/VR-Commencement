@@ -47,7 +47,7 @@ public class QuickSpawn : MonoBehaviourPunCallbacks
     }
 
     // This function is primarily depricated after now joining the specific room
-    public override void OnJoinRandomFailed(short returnCode, string message)
+    public override void OnJoinRoomFailed(short returnCode, string message)
     {
         Debug.Log("Failed to join existing room");
         CreateRoom();
