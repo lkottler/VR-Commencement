@@ -2594,6 +2594,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 1804166029652914695, guid: b6bcef7f1eee73b47a7cef8e87c0ab9f, type: 3}
+      propertyPath: m_Text
+      value: "Chancellor \nBlank"
+      objectReference: {fileID: 0}
     - target: {fileID: 2872615519338226897, guid: b6bcef7f1eee73b47a7cef8e87c0ab9f, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -2604,7 +2608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2872615519338226897, guid: b6bcef7f1eee73b47a7cef8e87c0ab9f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.37
+      value: 5.36
       objectReference: {fileID: 0}
     - target: {fileID: 2872615519338226897, guid: b6bcef7f1eee73b47a7cef8e87c0ab9f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2614,6 +2618,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 4770934732530264024, guid: b6bcef7f1eee73b47a7cef8e87c0ab9f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3cd1033a3c4d5d2468494056894c3ccf, type: 2}
     - target: {fileID: 4770934732543826284, guid: b6bcef7f1eee73b47a7cef8e87c0ab9f, type: 3}
       propertyPath: m_Name
       value: Chancellor
@@ -2745,7 +2753,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 5
   m_Center: {x: 0, y: 1.2, z: 0}
 --- !u!114 &559801624
 MonoBehaviour:
