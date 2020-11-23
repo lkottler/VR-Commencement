@@ -11,8 +11,6 @@ public class UserDiplomaText : MonoBehaviour
     public Text userMajor;
     void Start()
     {
-        Debug.Log("start get name");
         userName.text = UserStats.getUsername();
-        Debug.Log("finish get name");
     }
 }

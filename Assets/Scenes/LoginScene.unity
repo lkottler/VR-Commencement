@@ -151,7 +151,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &117867136
 GameObject:
@@ -746,7 +746,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414176285}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 28acdd505ccddae4881dcc7da3780838, type: 3}
@@ -946,9 +946,17 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.037
       objectReference: {fileID: 0}
+    - target: {fileID: 867844396, guid: a00424376674daf459871de1d1ead42e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8274679558941554220, guid: a00424376674daf459871de1d1ead42e, type: 3}
       propertyPath: m_Name
       value: OnWisconsinStereo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274679558941554220, guid: a00424376674daf459871de1d1ead42e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8763514059528465558, guid: a00424376674daf459871de1d1ead42e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1086,7 +1094,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 170.547, y: -30, z: 0}
 --- !u!1 &1862298573
 GameObject:
@@ -1152,7 +1160,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2099075695
 GameObject:
