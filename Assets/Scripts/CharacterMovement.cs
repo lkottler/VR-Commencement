@@ -71,6 +71,13 @@ public class CharacterMovement : MonoBehaviour
 
 	void Update()
 	{
+		if (Input.GetKey(KeyCode.LeftShift))
+		{
+			speed = 13f;
+		} else
+        {
+			speed = 5f;
+        }
 		if (PV.IsMine)
 		{
 			BasicMovement();

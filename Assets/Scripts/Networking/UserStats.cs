@@ -4,6 +4,7 @@ using UnityEngine;
 public class UserStats : MonoBehaviour
 {
     private static string username = "Guest";
+    private static bool busy = false;
     public static UserStats m_Instance = null;
     public static UserStats Instance
     {

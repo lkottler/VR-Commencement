@@ -19,22 +19,23 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
 
     public void DebugReturn(DebugLevel level, string message)
     {
-        throw new System.NotImplementedException();
+        Debug.Log("DebugReturn(DebugLevel level, string message) was called: DebugLevel: " + level + ", message: " + message);
     }
 
     public void OnChatStateChange(ChatState state)
     {
-        throw new System.NotImplementedException();
+        Debug.Log("OnChatStateChange(ChatState state) was called. state: " + state);
     }
 
     public void OnConnected()
     {
         Debug.Log("OnConnected() Called");
+        CC.Subscribe("public");
     }
 
     public void OnDisconnected()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("OnDisconnected() was called");
     }
 
     public void OnGetMessages(string channelName, string[] senders, object[] messages)
@@ -43,7 +44,7 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
         string msgs = "";
         for (int i = 0; i < senders.Length; i++)
         {
-            msgs = string.Format("{0}{1}={2}, ", msgs, senders[i], messages[i]);
+            msgs = string.Format("{0}\n{1}: {2}", msgs, senders[i], messages[i]);
         }
         chatLog.text += msgs;
     }
@@ -57,7 +58,8 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
 
     public void OnStatusUpdate(string user, int status, bool gotMessage, object message)
     {
-        throw new System.NotImplementedException();
+        Debug.Log("OnStatusUpdate(string user, int status, bool gostMessage, object message) was called. " +
+            "user: " + user + ", status: " + status + ", gotMessage: " + gotMessage + ", message: " + message);
     }
 
     public void OnSubscribed(string[] channels, bool[] results)
@@ -67,7 +69,7 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
 
     public void OnUnsubscribed(string[] channels)
     {
-        throw new System.NotImplementedException();
+        Debug.Log("OnUnsubscribed() was called");
     }
 
     public void OnUserSubscribed(string channel, string user)
@@ -88,19 +90,20 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
         Debug.Log("chat client started");
         username = UserStats.getUsername();
         CC = new ChatClient(this);
+        CC.Connect(PhotonNetwork.PhotonServerSettings.AppSettings.AppIdChat, PhotonNetwork.AppVersion, new AuthenticationValues(username));
     }
 
-    bool typing = false;
-
-    void SendMessage()
+    public void PostMessage()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         CC.PublishMessage("public", userMessage.text);
         userMessage.text = "";
     }
 
-    public IEnumerator ActivateInput()
+    public void ActivateInput()
     {
-        yield return 0;
+        Cursor.lockState = CursorLockMode.None;
+        //UserStats.setBusy(true);
         userMessage.Select();
         userMessage.ActivateInputField();
     }
@@ -109,14 +112,12 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
     {
         if (Input.GetKey(KeyCode.Return))
         {
-            Debug.Log("User pressed enter");
             if (userMessage.text.Length > 0)
             {
                 Debug.Log("user has a message: " + userMessage.text);
-                SendMessage();
+                PostMessage();
             } else
             {
-                Debug.Log("Attempting to activate input field");
                 ActivateInput();
             }
 
