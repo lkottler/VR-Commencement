@@ -33,6 +33,7 @@ public class GameSetupController : MonoBehaviour
     }
     private void CreatePlayer()
     {
-        GameObject player = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PLAYER"), new Vector3(-149.5f, 127.3f, 262.58f), Quaternion.identity);
+        Vector3 position = new Vector3(Random.Range(-211f, -118f), 122.55f, Random.Range(250f, 312f));
+        GameObject player = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PLAYER"), position, Quaternion.identity);
     }
 }
