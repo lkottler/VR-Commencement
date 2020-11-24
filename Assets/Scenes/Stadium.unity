@@ -4169,6 +4169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cea1fda42001d9489aeca0f78eda7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventSystem: {fileID: 1783162774}
   userMessage: {fileID: 1134672787}
   chatLog: {fileID: 1767057904}
   sendButton: {fileID: 1615867930}

@@ -9,6 +9,9 @@ using Photon.Pun;
 public class PhotonChatManager : MonoBehaviour, IChatClientListener
 {
     [SerializeField]
+    GameObject eventSystem;
+
+    [SerializeField]
     InputField userMessage;
 
     [SerializeField]
@@ -93,35 +96,66 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
         CC.Connect(PhotonNetwork.PhotonServerSettings.AppSettings.AppIdChat, PhotonNetwork.AppVersion, new AuthenticationValues(username));
     }
 
+
+    bool typing = false;
+
     public void PostMessage()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        CC.PublishMessage("public", userMessage.text);
+        typing = false;
+        if (userMessage.text.Length > 0)
+            CC.PublishMessage("public", userMessage.text);
         userMessage.text = "";
+        // deselect button
+        eventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
+    }
+
+    IEnumerator setTyping(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        typing = false;
     }
 
     public void ActivateInput()
     {
+        typing = true;
+        Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         //UserStats.setBusy(true);
         userMessage.Select();
         userMessage.ActivateInputField();
     }
     // Update is called once per frame
+
+
     void Update()
     {
-        if (Input.GetKey(KeyCode.Return))
+        if (!typing)
         {
-            if (userMessage.text.Length > 0)
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            if (Input.GetKeyDown(KeyCode.Return))
             {
-                Debug.Log("user has a message: " + userMessage.text);
-                PostMessage();
-            } else
-            {
-                ActivateInput();
+                if (userMessage.text.Length > 0)
+                {
+                    Debug.Log("user has a message: " + userMessage.text);
+                    PostMessage();
+                }
+                else
+                {
+                    Debug.Log("Ran ActivateInput()");
+                    ActivateInput();
+                }
             }
-
         }
+        else
+        {
+            if (Input.GetKey(KeyCode.Return))
+            {
+                if (userMessage.text.Length > 0)
+                    PostMessage();
+            }
+        }
+        
         CC.Service();
     }
 }
