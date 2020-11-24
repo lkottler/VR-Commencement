@@ -24,7 +24,7 @@ public class Camera_Controller : MonoBehaviour
     }
     private void LateUpdate()
     {
-        thirdPersonOffset = new Vector3(playerTransform.position.x, playerTransform.position.y + height, playerTransform.position.z);
+        thirdPersonOffset = new Vector3(playerTransform.position.x, playerTransform.position.y + height, playerTransform.position.z+height);
         repositionCamera(); // Reposition camera based on the rotation assosiated with mouseInput.
     }
 
