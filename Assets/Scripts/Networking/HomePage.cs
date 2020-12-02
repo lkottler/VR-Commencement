@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HomePage : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class HomePage : MonoBehaviour
     UserStats userStats;
 
     GameObject MenuCanvas;
-    public InputField regUser, regPW, regConf, logUser, logPW;
+    public InputField regUser, regPW, regConf, logUser, logPW,regDegree;
     public QuickSpawn QuickSpawnController;
 
     public Button loginBtn, regBtn, guestBtn;
@@ -57,8 +58,8 @@ public class HomePage : MonoBehaviour
     }
     public void CallRegister()
     {
-        Debug.Log("CallRegister called");
         StartCoroutine(Register());
+        Debug.Log("CallRegister called");
     }
 
     public void SpawnPlayer()
@@ -70,7 +71,9 @@ public class HomePage : MonoBehaviour
     }
     public void CallGuest()
     {
-        SpawnPlayer();
+        SceneManager.LoadScene(sceneName: "RegisterGuestAvatar");
+        Debug.Log("CallGuest called");
+        //SpawnPlayer();
     }
 
     IEnumerator Register()
@@ -79,6 +82,7 @@ public class HomePage : MonoBehaviour
         WWWForm form = new WWWForm();
         form.AddField("name", regUser.text);
         form.AddField("password", regPW.text);
+        form.AddField("degree", regDegree.text);
         string url = "http://pages.cs.wisc.edu/~lkottler/commencement/register"; //TODO
         Debug.Log("Database starting");
         regSuccess = true;
@@ -92,7 +96,10 @@ public class HomePage : MonoBehaviour
                 Debug.Log("Registration worked.");
                 //TODO populate connected user's fields into their prefab before loading
                 UserStats.setUsername(regUser.text);
-                SpawnPlayer();
+                UserStats.setDegree(regDegree.text);
+                //SpawnPlayer();
+                SceneManager.LoadScene(sceneName: "RegisterAvatar");
+
             }
             else
             {
