@@ -67,16 +67,24 @@ public class HomePage : MonoBehaviour
 
     private void selectAvatar()
     {
-        LoginUI.SetActive(false);
-        SelectUI.SetActive(true);
+        StartCoroutine(DelayUI(true));
         cameraPosition = new Vector3(1894f, -184.07f, 626.04f);
         cameraRotation = Quaternion.Euler(new Vector3(0f, -90f, 0f));
     }
-
+    IEnumerator DelayUI(bool choosing)
+    {   
+        SelectUI.SetActive(false);
+        LoginUI.SetActive(false);
+        yield return new WaitForSeconds(3.2f);
+        if (choosing)
+            SelectUI.SetActive(true);
+        else
+            LoginUI.SetActive(true);
+        
+    }
     public void goBack()
     {
-        LoginUI.SetActive(true);
-        SelectUI.SetActive(false);
+        StartCoroutine(DelayUI(false));
         cameraPosition = originalPos;
         cameraRotation = originalRot;
     }
