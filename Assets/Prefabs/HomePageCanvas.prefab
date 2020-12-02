@@ -114,14 +114,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924d12d56ffea1d4ca0bd4d041bb5f8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoginUI: {fileID: 0}
+  SelectUI: {fileID: 0}
   regUser: {fileID: 2899473984421597516}
   regPW: {fileID: 2899473984640922473}
   regConf: {fileID: 2899473985818445807}
   logUser: {fileID: 2899473985697895597}
   logPW: {fileID: 2899473985446561875}
-  player: {fileID: 624465554976945735, guid: 3b5a03d01f86fa847a2c923e73ad9f0b, type: 3}
-  loginCam: {fileID: 0}
-  MenuCanvas: {fileID: 4968288348615042899}
+  regDegree: {fileID: 0}
+  QuickSpawnController: {fileID: 0}
+  mainCam: {fileID: 0}
+  logSuccess: 0
+  regSuccess: 1
+  loginText: {fileID: 0}
   loginBtn: {fileID: 412938326938430695}
   regBtn: {fileID: 412938326766403485}
   guestBtn: {fileID: 412938325958761106}
@@ -596,6 +601,18 @@ PrefabInstance:
     - target: {fileID: 2372083035480738695, guid: ff82eef894c51de4ba7b15712b091f30, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2372083035480738695, guid: ff82eef894c51de4ba7b15712b091f30, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2372083035480738695, guid: ff82eef894c51de4ba7b15712b091f30, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2372083035480738695, guid: ff82eef894c51de4ba7b15712b091f30, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3647680272990452885, guid: ff82eef894c51de4ba7b15712b091f30, type: 3}
       propertyPath: m_Text

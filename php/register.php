@@ -9,6 +9,8 @@
 
 	$username = $_POST["name"];
 	$password = $_POST["password"];
+	$degree   = $_POST["degree"];
+	$avatar   = $_POST["avatar"];
 	preg_replace("/[^A-Za-z0-9 ]/", '', $username);
 	preg_replace("/[^A-Za-z0-9 ]/", '', $password);
 
@@ -25,8 +27,9 @@
 	$salt = "\$5\$rounds=5000\$" . "s3cretkey" . $username . "\$";
 	$hash = crypt($password, $salt);
 
-	$insertuserquery = "INSERT INTO users (username, hash, salt) VALUES ('" . $username . "', '" . $hash . "', '" . $salt . "');";
-	$db->query($insertuserquery) or die("4: Insert user query failed"); //error code #4 = insert user query failed.
+	$insertuserquery = "INSERT INTO users (username, hash, salt, degree, avatar) 
+						VALUES ('" . $username . "', '" . $hash . "', '" . $salt . "', '" . $degree . "', '" . $avatar . "');";
+	$db->query($insertuserquery) or die("4: Insert user query failed, tried to write: " . $insertuserquery); //error code #4 = insert user query failed.
 
 	echo("0");
 

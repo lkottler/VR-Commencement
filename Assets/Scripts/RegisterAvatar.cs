@@ -73,7 +73,7 @@ public class RegisterAvatar : MonoBehaviour
             }
         }
     }
-
+    /*
     public void CallSelectGradBlack() 
     {
         UserStats.setTexture("Graduate_Black");
@@ -86,5 +86,5 @@ public class RegisterAvatar : MonoBehaviour
     {
         UserStats.setTexture("Graduate_White");
     }
-
+    */
 }

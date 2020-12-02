@@ -26,9 +26,9 @@ public class ButtonlSelectAvatar : MonoBehaviour
     }
     void Click()
     {
-        Debug.Log("You have clicked the button!");
+        //Debug.Log("You have clicked the button!");
         if (SelectAnimator != null) {
-            Debug.Log("You have enter the SelectAnimator!");
+            //Debug.Log("You have enter the SelectAnimator!");
             if (speed == 0.0) 
             {
                 speed = 0.5f;

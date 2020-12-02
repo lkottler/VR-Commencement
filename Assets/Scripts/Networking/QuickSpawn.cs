@@ -7,9 +7,11 @@ using UnityEngine.UI;
 
 public class QuickSpawn : MonoBehaviourPunCallbacks
 {
-    string username = "Guest";
     [SerializeField]
-    private Button guestLoginButton;
+    Button guestLoginButton, userLoginButton, regButton;
+    
+    [SerializeField]
+    Text connectingText;
 
     //[SerializeField]
     //private GameObject quitButton;
@@ -36,6 +38,10 @@ public class QuickSpawn : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.AutomaticallySyncScene = true;
         guestLoginButton.interactable = true;
+        userLoginButton.interactable = true;
+        regButton.interactable = true;
+        connectingText.text = "Status: Connected";
+        connectingText.color = Color.green;//new Color(46, 204, 113, 255);
     }
 
     public void guestStart()

@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stadium.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/RegisterAvatar.unity
     guid: 732969c1b4717664293f83c51e0a0d8e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/RegisterGuestAvatar.unity
     guid: 536f741656fa43049ac1f65c0390d440
   m_configObjects: {}

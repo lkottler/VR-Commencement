@@ -4,7 +4,8 @@ using UnityEngine;
 public class UserStats : MonoBehaviour
 {
     private static string username = "Guest";
-    private static string avatarTexture = "UWGraduate_Brown";//default texture
+    private static string[] avatarTextures = { "Graduate_Black", "Graduate_Brown", "Graduate_White"};//default texture
+    private static int avatarIndex = 0;
     private static string userDegree = "Bachelor of Science";//default Bachelor of Science
     private static string userPassword = "";
     private static bool busy = false;
@@ -30,10 +31,9 @@ public class UserStats : MonoBehaviour
         PhotonNetwork.LocalPlayer.NickName = name;
     }
 
-    public static void setTexture(string texture) 
+    public static void setAvatarIndex(int index)
     {
-        avatarTexture = texture;
-        Debug.Log("setting avatar texture as: " + texture);
+        avatarIndex = index;
     }
 
     public static void setDegree(string degree)
@@ -49,7 +49,8 @@ public class UserStats : MonoBehaviour
     }
 
     public static string getUsername() { return username; }
-    public static string getTexture() { return avatarTexture; }
+    public static string getTexture() { return avatarTextures[avatarIndex]; }
     public static string getDegree() { return userDegree; }
     public static string getPassword() { return userPassword; }
+    public static int getAvatarIndex() { return avatarIndex; }
 }

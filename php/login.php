@@ -10,7 +10,7 @@
 	$username = $_POST["name"];
 	$password = $_POST["password"];
 
-	$namecheckquery = "SELECT username, salt, hash FROM users WHERE username='" . $username . "';";
+	$namecheckquery = "SELECT username, salt, hash, degree, avatar FROM users WHERE username='" . $username . "';";
 	$namecheck = $db->query($namecheckquery) or die("2: Name check query failed"); //error code #2 = name check query failed
 	if (mysqli_num_rows($namecheck) != 1)
 	{
@@ -29,6 +29,6 @@
 		exit();
 	}
 
-	echo "0";
+	echo "0\t" . $existinginfo["degree"] . "\t" . $existinginfo["avatar"];
 
 ?>
