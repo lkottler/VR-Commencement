@@ -13,7 +13,7 @@ public class HomePage : MonoBehaviour
     public InputField regUser, regPW, regConf, logUser, logPW,regDegree;
     public QuickSpawn QuickSpawnController;
     public Camera mainCam;
-    public bool logSuccess = false, regSuccess = true;
+    public bool logSuccess = false, regSuccess = false;
     public Text loginText, regDebug;
     private int avatarIndex = 0;
     private Vector3 cameraPosition, originalPos;
