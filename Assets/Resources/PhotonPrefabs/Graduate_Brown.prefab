@@ -1560,7 +1560,7 @@ GameObject:
   - component: {fileID: 4562313513536826646}
   - component: {fileID: 1875860066316038849}
   m_Layer: 0
-  m_Name: Graduate_Brown 1
+  m_Name: Graduate_Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
