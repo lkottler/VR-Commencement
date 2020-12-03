@@ -10,6 +10,7 @@ public class UserStats : MonoBehaviour
     private static string userPassword = "";
     private static bool busy = false;
     public static UserStats m_Instance = null;
+    public static bool Chaton = false;
     public static UserStats Instance
     {
         get
@@ -48,9 +49,16 @@ public class UserStats : MonoBehaviour
         Debug.Log("setting user password as: " + password);
     }
 
+    public static void setChatOn(bool newChatOn)
+    {
+        Chaton = newChatOn;
+        Debug.Log("setting ChatOn as: " + newChatOn);
+    }
+
     public static string getUsername() { return username; }
     public static string getTexture() { return avatarTextures[avatarIndex]; }
     public static string getDegree() { return userDegree; }
     public static string getPassword() { return userPassword; }
     public static int getAvatarIndex() { return avatarIndex; }
+    public static bool getChatOn() { return Chaton; }
 }

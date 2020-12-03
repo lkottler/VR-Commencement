@@ -12,5 +12,6 @@ public class UserDiplomaText : MonoBehaviour
     void Start()
     {
         userName.text = UserStats.getUsername();
+        userMajor.text = UserStats.getDegree();
     }
 }
