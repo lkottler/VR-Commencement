@@ -45,9 +45,14 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
     {
         Debug.Log("OnGetMessages() called: channelName: " + channelName + " #senders: " + senders.Length + " messages: " + messages.Length);
         string msgs = "";
+        string msg = "";
         for (int i = 0; i < senders.Length; i++)
         {
-            msgs = string.Format("{0}\n{1}: {2}", msgs, senders[i], messages[i]);
+            msg = messages[i].ToString();
+            if (msg.Length > 28)
+                for (int j = 1; j < (msg.Length / 28); j++)
+                    msg = msg.Insert(28 * j, "\n");
+            msgs = string.Format("{0}\n{1}: {2}", msgs, senders[i], msg);
         }
         chatLog.text += msgs;
     }
