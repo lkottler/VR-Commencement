@@ -106,14 +106,21 @@ public class HomePage : MonoBehaviour
     public void CallGuest()
     {
         //SceneManager.LoadScene(sceneName: "RegisterGuestAvatar");
-        Debug.Log("CallGuest called");
-        SpawnPlayer();
+        UserStats.isGuest = true;
+        selectAvatar();
     }
 
     public void RegisterAndSpawn()
     {
         UserStats.setAvatarIndex(avatarIndex);
-        StartCoroutine(Register());
+        if (UserStats.isGuest)
+        {
+            SpawnPlayer();
+        }
+        else
+        {
+            StartCoroutine(Register());
+        }
     }
     public void setAvatar(int index)
     {

@@ -11,6 +11,7 @@ public class UserStats : MonoBehaviour
     private static bool busy = false;
     public static UserStats m_Instance = null;
     public static bool Chaton = false;
+    public static bool isGuest = false;
     public static UserStats Instance
     {
         get
