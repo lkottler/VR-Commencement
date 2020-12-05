@@ -24,7 +24,7 @@ public class NetworkController : MonoBehaviourPunCallbacks
     {
         Debug.Log("PHOTON Connected to: " + PhotonNetwork.CloudRegion + " server.");
         Debug.Log("CONNECTED TO: " + PhotonNetwork.ServerAddress);
-        serverText.text = "Connected to: " + PhotonNetwork.ServerAddress;
+        serverText.text = "Connected to: " + PhotonNetwork.ServerAddress + "\tRegion: " + PhotonNetwork.CloudRegion;
         //base.OnConnectedToMaster();)
     }
 
