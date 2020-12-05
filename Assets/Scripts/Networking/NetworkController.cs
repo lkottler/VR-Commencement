@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class NetworkController : MonoBehaviourPunCallbacks
 {
+    [SerializeField]
+    UnityEngine.UI.Text serverText;
     /*
      * Documentation: https://doc.photonengine.com/en-us/pun/current/getting-started/pun-intro
      * Scripting API: https://doc-api.photonengine.com/en/pun/v2/index.html
@@ -21,6 +23,8 @@ public class NetworkController : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         Debug.Log("PHOTON Connected to: " + PhotonNetwork.CloudRegion + " server.");
+        Debug.Log("CONNECTED TO: " + PhotonNetwork.ServerAddress);
+        serverText.text = "Connected to: " + PhotonNetwork.ServerAddress;
         //base.OnConnectedToMaster();)
     }
 
