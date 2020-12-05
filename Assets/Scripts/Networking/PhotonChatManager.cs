@@ -102,8 +102,8 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
     }
 
 
-    bool typing = false;
-
+    public static bool typing = false;
+   
     public void PostMessage()
     {
         typing = false;

@@ -48,7 +48,7 @@ public class SimplePeoplePlayer : MonoBehaviour
             float nsAxis = Input.GetAxis("Vertical");
 
             // Process the movement input.
-            if ((Mathf.Abs(weAxis) > 0.0f) || (Mathf.Abs(nsAxis) > 0.0f))
+            if (!PhotonChatManager.typing && ((Mathf.Abs(weAxis) > 0.0f) || (Mathf.Abs(nsAxis) > 0.0f)))
             {
                 // If the character is currently idle...
                 if (!this.isMoving)

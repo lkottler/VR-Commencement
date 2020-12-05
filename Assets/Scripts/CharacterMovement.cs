@@ -31,57 +31,67 @@ public class CharacterMovement : MonoBehaviour
 	
 	void BasicMovement()
     {
-		if (myCC.isGrounded && Input.GetButton("Jump"))
+		if (!PhotonChatManager.typing)
 		{
-			moveDirection.y = jumpSpeed;
-		}
-		moveDirection.y -= gravity * Time.deltaTime;
-		myCC.Move(moveDirection * Time.deltaTime);
-		if (Input.GetKey(KeyCode.W))
-        {
-			myCC.Move(transform.forward * Time.deltaTime * speed);
-        }
-		if (Input.GetKey(KeyCode.A))
-		{
-			myCC.Move(-transform.right * Time.deltaTime * speed);
-		}
-		if (Input.GetKey(KeyCode.S))
-		{
-			myCC.Move(-transform.forward * Time.deltaTime * speed);
-		}
-		if (Input.GetKey(KeyCode.D))
-		{
-			myCC.Move(transform.right * Time.deltaTime * speed);
+			if (myCC.isGrounded && Input.GetButton("Jump"))
+			{
+				moveDirection.y = jumpSpeed;
+			}
+			moveDirection.y -= gravity * Time.deltaTime;
+			myCC.Move(moveDirection * Time.deltaTime);
+			if (Input.GetKey(KeyCode.W))
+			{
+				myCC.Move(transform.forward * Time.deltaTime * speed);
+			}
+			if (Input.GetKey(KeyCode.A))
+			{
+				myCC.Move(-transform.right * Time.deltaTime * speed);
+			}
+			if (Input.GetKey(KeyCode.S))
+			{
+				myCC.Move(-transform.forward * Time.deltaTime * speed);
+			}
+			if (Input.GetKey(KeyCode.D))
+			{
+				myCC.Move(transform.right * Time.deltaTime * speed);
+			} 
 		}
 	}
 
 	void BasicRotation()
 	{
-		if (Input.GetKey(KeyCode.Q))
+		if (!PhotonChatManager.typing)
 		{
-			transform.Rotate(-Vector3.up * rotateSpeed * Time.deltaTime);
-		}
+			if (Input.GetKey(KeyCode.Q))
+			{
+				transform.Rotate(-Vector3.up * rotateSpeed * Time.deltaTime);
+			}
 
-		if (Input.GetKey(KeyCode.E))
-		{
-			transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
+			if (Input.GetKey(KeyCode.E))
+			{
+				transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
+			}
 		}
 	}
 
 
 	void Update()
 	{
-		if (Input.GetKey(KeyCode.LeftShift))
+		if (!PhotonChatManager.typing)
 		{
-			speed = 13f;
-		} else
-        {
-			speed = 5f;
-        }
-		if (PV.IsMine)
-		{
-			BasicMovement();
-			BasicRotation();
+			if (Input.GetKey(KeyCode.LeftShift))
+			{
+				speed = 13f;
+			}
+			else
+			{
+				speed = 5f;
+			}
+			if (PV.IsMine)
+			{
+				BasicMovement();
+				BasicRotation();
+			}
 		}
 	}
 
