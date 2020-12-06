@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 579, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 107
+  controlID: 132
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 303, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 109
+  controlID: 134
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_MinSize: {x: 303, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 108
+  controlID: 133
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -315,9 +315,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 491.70343, y: 466.97366, z: 1.2309265}
+    m_Target: {x: 566.6445, y: 435.98218, z: -305.47662}
     speed: 2
-    m_Value: {x: 491.70343, y: 466.97366, z: 1.2309265}
+    m_Value: {x: 566.6445, y: 435.98218, z: -305.47662}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -364,13 +364,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.025790801, y: 0.035078626, z: -0.000905556, w: -0.9990531}
+    m_Target: {x: 0.07209682, y: -0.064292714, z: 0.0046571735, w: 0.9953175}
     speed: 2
-    m_Value: {x: -0.025790755, y: 0.035078563, z: -0.0009055544, w: -0.99905133}
+    m_Value: {x: 0.07209646, y: -0.06429239, z: 0.0046571502, w: 0.9953125}
   m_Size:
-    m_Target: 313.01788
+    m_Target: 212.71935
     speed: 2
-    m_Value: 313.01788
+    m_Value: 212.71935
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -421,7 +421,7 @@ MonoBehaviour:
     height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
-    m_NameFilter: 
+    m_NameFilter: photon sett
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -433,20 +433,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Networking
+    - Assets/Scenes
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 61
   m_LastFolders:
-  - Assets/Scripts/Networking
+  - Assets/Scenes
   m_LastFoldersGridSize: 61
   m_LastProjectPath: C:\Users\Logan\Desktop\VR-Commencement
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 197}
-    m_SelectedIDs: ea870000
-    m_LastClickedID: 34794
+    m_SelectedIDs: 
+    m_LastClickedID: 0
     m_ExpandedIDs: 0000000066450000684500006a4500006c4500006e450000704500007245000074450000764500007845000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -597,9 +597,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 78670000
-      m_LastClickedID: 26488
-      m_ExpandedIDs: 26e0ffff46e0ffff7ce7ffff84e7ffff60fbffff62680000fa6a0000286b0000
+      m_SelectedIDs: c8390000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 52edffffecf4ffff40fbffff1e46000052460000ac4600001847000088470000b8470000c647000002480000fc480000004900000a490000b8490000d6490000da49000086500000f251000020520000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
