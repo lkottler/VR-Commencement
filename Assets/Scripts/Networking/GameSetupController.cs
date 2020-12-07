@@ -35,5 +35,6 @@ public class GameSetupController : MonoBehaviour
     {
         Vector3 position = new Vector3(Random.Range(-211f, -118f), 122.55f, Random.Range(250f, 312f));
         GameObject player = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs",UserStats.getTexture()), position, Quaternion.identity);
+        UserStats.player = player;
     }
 }

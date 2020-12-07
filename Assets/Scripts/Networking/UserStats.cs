@@ -12,6 +12,7 @@ public class UserStats : MonoBehaviour
     public static UserStats m_Instance = null;
     public static bool Chaton = false;
     public static bool isGuest = false;
+    public static GameObject player;
     public static UserStats Instance
     {
         get
