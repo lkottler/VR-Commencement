@@ -14,7 +14,7 @@ public class CharacterMovement : MonoBehaviour
 	private float sprintSpeed = 19f;
 	private float rotateSpeed = 240f;
 	private Vector3 moveDirection = Vector3.zero;
-	private float jumpSpeed = 30.0F;
+	private float jumpSpeed = 26.0F;
 	private float gravity = 50.0F;
 	private float maxVelocity = 200f;
 	//public var velocidade = 30;
@@ -48,6 +48,12 @@ public class CharacterMovement : MonoBehaviour
 			{
 				moveDirection.y -= gravity * Time.deltaTime;
 			}
+
+			// diagonal fix
+			if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) 
+				&& (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.W)))
+				speed /= Mathf.Sqrt(2);
+
 			myCC.Move(moveDirection * Time.deltaTime);
 			if (Input.GetKey(KeyCode.W))
 			{

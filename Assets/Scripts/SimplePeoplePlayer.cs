@@ -11,6 +11,7 @@ public class SimplePeoplePlayer : MonoBehaviour
     public PhotonView photonView;
     private Animator animator;
     private bool isMoving = false;
+    private bool isJumping = false;
     private float speed = 0f;
 
     /// <summary>
@@ -47,10 +48,22 @@ public class SimplePeoplePlayer : MonoBehaviour
         Vector3 pos1;
         Vector3 pos2;
         pos1 = trans.position;
-        yield return new WaitForSeconds(0.05f);
+
+        yield return new WaitForSeconds(0.03f);
         pos2 = trans.position;
-        Debug.Log((pos1 - pos2).sqrMagnitude);
-        speed = (pos1 - pos2).sqrMagnitude * 1.5f;
+        //Debug.Log(Vector3.Distance(pos1, pos2));
+        Vector3 dist = (pos2 - pos1);
+        if (dist.y > 0.1)
+        {
+            isJumping = true;
+        }
+        else
+        {
+            isJumping = false;
+        }
+        dist.y = 0;
+        speed = dist.sqrMagnitude * 3.0f;
+        Debug.Log(speed);
         checkMoving();
     }
 
@@ -59,15 +72,11 @@ public class SimplePeoplePlayer : MonoBehaviour
         //if (photonView)
         if (animator != null)
         {
-            if (isMoving)
-            {
-                // Transition to the walking state.
-                animator.SetFloat("Speed_f", speed);
 
-            } else
-            {
-                animator.SetFloat("Speed_f", speed);
-            }
+            animator.SetBool("Jump_b", isJumping);
+            animator.SetFloat("Speed_f", speed);
+            
+
         }
     }
 }
