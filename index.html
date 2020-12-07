@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Virtual_Commencement</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1280px; height: 720px; background: #BC1B1B;
+    	position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;">Canvas not supported</canvas>
+    <script src="Build/commence.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/commence.data",
+        frameworkUrl: "Build/commence.framework.js",
+        codeUrl: "Build/commence.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Virtual_Commencement",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>

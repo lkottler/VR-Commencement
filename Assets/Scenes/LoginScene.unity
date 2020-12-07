@@ -3403,7 +3403,7 @@ MonoBehaviour:
   userLoginButton: {fileID: 412938326469408106}
   regButton: {fileID: 412938326297503248}
   connectingText: {fileID: 704702144}
-  RoomSize: 20
+  RoomSize: 100
 --- !u!4 &2099075697
 Transform:
   m_ObjectHideFlags: 0
