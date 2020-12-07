@@ -103,6 +103,7 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
 
 
     public static bool typing = false;
+    private static bool delay = false;
    
     public void PostMessage()
     {
@@ -110,14 +111,13 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
         if (userMessage.text.Length > 0)
             CC.PublishMessage("public", userMessage.text);
         userMessage.text = "";
-        // deselect button
-        eventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
+        DeactivateInput();
     }
 
-    IEnumerator setTyping(float delay)
+    IEnumerator setDelay(float wait)
     {
-        yield return new WaitForSeconds(delay);
-        typing = false;
+        yield return new WaitForSeconds(wait);
+        delay = false;
     }
 
     public void ActivateInput()
@@ -129,7 +129,12 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
         userMessage.Select();
         userMessage.ActivateInputField();
     }
-    // Update is called once per frame
+    public void DeactivateInput()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        eventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
+    }
 
 
     void Update()
@@ -140,6 +145,7 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
             Cursor.lockState = CursorLockMode.Locked;
             if (Input.GetKeyDown(KeyCode.Return))
             {
+                delay = true;
                 if (userMessage.text.Length > 0)
                 {
                     Debug.Log("user has a message: " + userMessage.text);
@@ -150,14 +156,15 @@ public class PhotonChatManager : MonoBehaviour, IChatClientListener
                     Debug.Log("Ran ActivateInput()");
                     ActivateInput();
                 }
+                StartCoroutine(setDelay(0.3f));
             }
         }
         else
         {
-            if (Input.GetKey(KeyCode.Return))
+            Debug.Log(delay);
+            if (Input.GetKey(KeyCode.Return) && !delay)
             {
-                if (userMessage.text.Length > 0)
-                    PostMessage();
+                PostMessage();
             }
         }
         

@@ -16,6 +16,7 @@ public class CharacterMovement : MonoBehaviour
 	private Vector3 moveDirection = Vector3.zero;
 	private float jumpSpeed = 30.0F;
 	private float gravity = 50.0F;
+	private float maxVelocity = 200f;
 	//public var velocidade = 30;
 
 	Vector3 syncPos = Vector3.zero;
@@ -39,8 +40,14 @@ public class CharacterMovement : MonoBehaviour
 			{
 				moveDirection.y = jumpSpeed;
 			}
-			if (!myCC.isGrounded)
+			if (myCC.isGrounded && moveDirection.y < 0)
+			{
+				moveDirection.y = 0;
+			}
+			else
+			{
 				moveDirection.y -= gravity * Time.deltaTime;
+			}
 			myCC.Move(moveDirection * Time.deltaTime);
 			if (Input.GetKey(KeyCode.W))
 			{
