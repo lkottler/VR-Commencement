@@ -13,39 +13,62 @@ namespace Tests
         public void UserStatsTestSimplePasses()
         {
             // Use the Assert class to test conditions
-            
-            ////////////////////////////////////////////////////
-            // TEST 1: get username of default person
-            ////////////////////////////////////////////////////
-            string defaultName = "Guest";
-            string actual = UserStats.getUsername();
-            Assert.AreEqual(defaultName, actual);
 
             ////////////////////////////////////////////////////
-            // TEST 2: set "normal" username
+            // TEST 1: get username of default , changed person
             ////////////////////////////////////////////////////
-            string user1 = "JoeShmoe";
-            UserStats.setUsername(user1);
-            actual = UserStats.getUsername();
-            Assert.AreEqual(user1, actual);
+            string username = "user";
+            string curr = UserStatsMock.getUsername();
+            Assert.AreEqual(curr, "Guest");
+
+            UserStatsMock.setUsername(username);
+            curr = UserStatsMock.getUsername();
+            Assert.AreEqual(curr, "user");
 
             ////////////////////////////////////////////////////
-            // TEST 3: set username with space and numbers
+            // TEST 2: get index of default , changed person
             ////////////////////////////////////////////////////
-            string user2 = "Joe Shmoe99";
-            UserStats.setUsername(user2);
-            actual = UserStats.getUsername();
-            Assert.AreEqual(user2, actual);
+            int index = 2;
+            int ind = UserStatsMock.getAvatarIndex();
+            Assert.AreEqual(ind, 0);
+
+            UserStatsMock.setAvatarIndex(index);
+            ind = UserStatsMock.getAvatarIndex();
+            Assert.AreEqual(ind, 2);
 
             ////////////////////////////////////////////////////
-            // TEST 4: set username as zero length string
+            // TEST 3: get password of default , changed person
             ////////////////////////////////////////////////////
-            string user3 = "";
-            UserStats.setUsername(user3);
-            actual = UserStats.getUsername();
-            Assert.AreEqual(user3, actual);
-            
-            //Assert.AreEqual("", "");
+            string password = "userp";
+            string currp = UserStatsMock.getPassword();
+            Assert.AreEqual(currp, "");
+
+            UserStatsMock.setPassword(password);
+            currp = UserStatsMock.getPassword();
+            Assert.AreEqual(currp, "userp");
+
+            ////////////////////////////////////////////////////
+            // TEST 4: get degree of default , changed person
+            ////////////////////////////////////////////////////
+            string degree = "CS";
+            string currd = UserStatsMock.getDegree();
+            Assert.AreEqual(currd, "Bachelor of Science");
+
+            UserStatsMock.setDegree(degree);
+            currd = UserStatsMock.getDegree();
+            Assert.AreEqual(currd, "CS");
+
+            ////////////////////////////////////////////////////
+            // TEST 5: get chat of default , changed person
+            ////////////////////////////////////////////////////
+            bool chat = true;
+            bool currc = UserStatsMock.getChatOn();
+            Assert.AreEqual(currc, false);
+
+            UserStatsMock.setChatOn(chat);
+            currc = UserStatsMock.getChatOn();
+            Assert.AreEqual(currc, true);
+
         }
 
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use

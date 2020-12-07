@@ -13,10 +13,14 @@ namespace Tests
         public void QuickSpawnTestSimplePasses()
         {
             // Use the Assert class to test conditions
-            bool pass = true;
-            QuickSpawn.Instance.guestStart();
-            QuickSpawn.Instance.QuickQuit();
-            Assert.True(pass);
+
+            ////////////////////////////////////////////////////
+            // TEST 1: spawn player
+            ////////////////////////////////////////////////////
+            QuickSpawnMock qs = new QuickSpawnMock();
+            qs.guestStart();
+            qs.OnConnectedToMaster();
+            qs.OnJoinRoomFailed("fail");
         }
 
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use

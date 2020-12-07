@@ -25,11 +25,7 @@ namespace Tests
             // Call registration method with input 
             string user1 = "RegTestUserNEW";
             string pass1 = "RegTestPassNEW";
-            bool success = true;
-            HomePage.Instance.regUser.text = user1;
-            HomePage.Instance.regPW.text = pass1;
-            HomePage.Instance.CallRegister();
-            success = HomePage.Instance.regSuccess;
+            bool success = HomePageMock.CallRegister(user1, pass1);
             Assert.True(success);
 
             /////////////////////////////////////////////////////////
@@ -37,14 +33,20 @@ namespace Tests
             /////////////////////////////////////////////////////////
 
             // Call registration method with input 
-            string user2 = "RegTestUserNEW";
-            string pass2 = "RegTestPassNEW";
-            success = false;
-            HomePage.Instance.regUser.text = user2;
-            HomePage.Instance.regPW.text = pass2;
-            HomePage.Instance.CallRegister();
-            success = HomePage.Instance.regSuccess;
+            user1 = "RegTestUser";
+            pass1 = "RegTestPass";
+            success = HomePageMock.CallRegister(user1, pass1);
             Assert.False(success);
+
+            /////////////////////////////////////////////////////////
+            // TEST 3: create valid new user, with repeat password
+            /////////////////////////////////////////////////////////
+
+            // Call registration method with input 
+            user1 = "RegTestUserNEW";
+            pass1 = "RegTestPass";
+            success = HomePageMock.CallRegister(user1, pass1);
+            Assert.True(success);
 
         }
 

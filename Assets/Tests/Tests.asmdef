@@ -4,7 +4,8 @@
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
         "Photon",
-        "PhotonUnityNetworking"
+        "PhotonUnityNetworking",
+        "Mocks"
     ],
     "includePlatforms": [
         "Editor"

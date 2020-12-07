@@ -23,11 +23,9 @@ namespace Tests
             // Call login method with input
             string user1 = "RegTestUser";
             string pass1 = "RegTestPass";
-            bool success = true;
-            HomePage.Instance.logUser.text = user1;
-            HomePage.Instance.logPW.text = pass1;
+            
             HomePage.Instance.CallLogin();
-            success = HomePage.Instance.logSuccess;
+            bool success = HomePageMock.CallLogin(user1, pass1);
             Assert.True(success);
 
             ////////////////////////////////////////////////////
@@ -35,13 +33,11 @@ namespace Tests
             ////////////////////////////////////////////////////
 
             // Call login method with input
-            string user2 = "RegTestUser";
-            string pass2 = "RegTestPassBad";
-            success = false;
-            HomePage.Instance.logUser.text = user2;
-            HomePage.Instance.logPW.text = pass2;
+            user1 = "RegTestUser";
+            pass1 = "RegTestPassBad";
+
             HomePage.Instance.CallLogin();
-            success = HomePage.Instance.logSuccess;
+            success = HomePageMock.CallLogin(user1, pass1);
             Assert.False(success);
 
             ////////////////////////////////////////////////////
@@ -49,13 +45,11 @@ namespace Tests
             ////////////////////////////////////////////////////
 
             // Call login method with input
-            string user3 = "RegTestUserBad";
-            string pass3 = "RegTestPass";
-            success = false;
-            HomePage.Instance.logUser.text = user3;
-            HomePage.Instance.logPW.text = pass3;
+            user1 = "RegTestUserBad";
+            pass1 = "RegTestPass";
+
             HomePage.Instance.CallLogin();
-            success = HomePage.Instance.logSuccess;
+            success = HomePageMock.CallLogin(user1, pass1);
             Assert.False(success);
 
             ////////////////////////////////////////////////////
@@ -63,13 +57,11 @@ namespace Tests
             ////////////////////////////////////////////////////
 
             // Call login method with input
-            string user4 = "RegTestUserBad";
-            string pass4 = "RegTestPassBad";
-            success = false;
-            HomePage.Instance.logUser.text = user4;
-            HomePage.Instance.logPW.text = pass4;
+            user1 = "RegTestUserBad";
+            pass1 = "RegTestPassBad";
+
             HomePage.Instance.CallLogin();
-            success = HomePage.Instance.logSuccess;
+            success = HomePageMock.CallLogin(user1, pass1);
             Assert.False(success);
 
         }
