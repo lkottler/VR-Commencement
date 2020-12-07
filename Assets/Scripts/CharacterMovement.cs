@@ -8,12 +8,14 @@ public class CharacterMovement : MonoBehaviour
 	private PhotonView PV;
 	private CharacterController myCC;
 
-	[Header("Settings")]
-	public float speed = 5f;
-	public float rotateSpeed = 70f;
+	//[Header("Settings")]
+	private float speed;
+	private float moveSpeed = 13f;
+	private float sprintSpeed = 23f;
+	private float rotateSpeed = 280f;
 	private Vector3 moveDirection = Vector3.zero;
-	public float jumpSpeed = 8.0F;
-	public float gravity = 20.0F;
+	private float jumpSpeed = 30.0F;
+	private float gravity = 50.0F;
 	//public var velocidade = 30;
 
 	Vector3 syncPos = Vector3.zero;
@@ -37,7 +39,8 @@ public class CharacterMovement : MonoBehaviour
 			{
 				moveDirection.y = jumpSpeed;
 			}
-			moveDirection.y -= gravity * Time.deltaTime;
+			if (!myCC.isGrounded)
+				moveDirection.y -= gravity * Time.deltaTime;
 			myCC.Move(moveDirection * Time.deltaTime);
 			if (Input.GetKey(KeyCode.W))
 			{
@@ -81,11 +84,11 @@ public class CharacterMovement : MonoBehaviour
 		{
 			if (Input.GetKey(KeyCode.LeftShift))
 			{
-				speed = 13f;
+				speed = sprintSpeed;
 			}
 			else
 			{
-				speed = 5f;
+				speed = moveSpeed;
 			}
 			if (PV.IsMine)
 			{
