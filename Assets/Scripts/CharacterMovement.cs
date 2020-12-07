@@ -10,9 +10,9 @@ public class CharacterMovement : MonoBehaviour
 
 	//[Header("Settings")]
 	private float speed;
-	private float moveSpeed = 13f;
-	private float sprintSpeed = 23f;
-	private float rotateSpeed = 280f;
+	private float moveSpeed = 10f;
+	private float sprintSpeed = 19f;
+	private float rotateSpeed = 240f;
 	private Vector3 moveDirection = Vector3.zero;
 	private float jumpSpeed = 30.0F;
 	private float gravity = 50.0F;
