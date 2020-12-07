@@ -1,6 +1,7 @@
 /[Ll]ibrary/
 /Builds/
 /commence/
+/Temp/
 Builds/*
 /Commence-Build/
 Library/ArtifactDB

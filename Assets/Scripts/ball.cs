@@ -13,6 +13,8 @@ public class ball : MonoBehaviour
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+        rb.AddForce(Physics.gravity * 2f, ForceMode.Acceleration);
+        rb.mass = 0.5f;
         kick = gameObject.GetComponent<AudioSource>();
         Physics.IgnoreCollision(stadium.GetComponent<Collider>(), GetComponent<Collider>());
     }
