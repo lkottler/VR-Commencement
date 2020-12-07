@@ -21,10 +21,9 @@ public class DiplomaImage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.G) && !PhotonChatManager.typing)
         {
       
-            Debug.Log("key G pressed.");
             image.enabled = !image.enabled;
             userName.enabled = image.enabled;
             userMajor.enabled = image.enabled;
