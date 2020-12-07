@@ -55,7 +55,6 @@ public class SimplePeoplePlayer : MonoBehaviour
         pos1 = trans.position;
         yield return new WaitForSeconds(timer);
         pos2 = trans.position;
-        //Debug.Log(Vector3.Distance(pos1, pos2));
         Vector3 dist = (pos2 - pos1);
         if (dist.y > 0.3)
         {
@@ -68,7 +67,7 @@ public class SimplePeoplePlayer : MonoBehaviour
         dist.y = 0;
 
         speed = dist.sqrMagnitude * 3.0f * (timer * 33);
-        Debug.Log(speed);
+        //Debug.Log(speed);
 
         checkMoving();
     }
