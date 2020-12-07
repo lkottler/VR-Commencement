@@ -6970,15 +6970,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a677ab43be751ad4a839933f3355f482, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -144.31549
+      value: -167.68
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a677ab43be751ad4a839933f3355f482, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 126.17
+      value: 125.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a677ab43be751ad4a839933f3355f482, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 347.96774
+      value: 319.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a677ab43be751ad4a839933f3355f482, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7027,6 +7027,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a677ab43be751ad4a839933f3355f482, type: 3}
       propertyPath: m_Name
       value: ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a677ab43be751ad4a839933f3355f482, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a677ab43be751ad4a839933f3355f482, type: 3}
@@ -7094,7 +7098,7 @@ MonoBehaviour:
   prefixField: -1
   observableSearch: 2
   Synchronization: 3
-  OwnershipTransfer: 0
+  OwnershipTransfer: 1
   ObservedComponents:
   - {fileID: 835055334}
   viewIdField: 2
