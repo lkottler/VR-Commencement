@@ -45,15 +45,19 @@ public class SimplePeoplePlayer : MonoBehaviour
         StartCoroutine(IsThisObjectMoving(transform));
     }
     IEnumerator IsThisObjectMoving(Transform trans) {
+        float timer = 0.03f;
+        if (!photonView.IsMine)
+        {
+            timer = 0.1f;
+        }
         Vector3 pos1;
         Vector3 pos2;
         pos1 = trans.position;
-
-        yield return new WaitForSeconds(0.03f);
+        yield return new WaitForSeconds(timer);
         pos2 = trans.position;
         //Debug.Log(Vector3.Distance(pos1, pos2));
         Vector3 dist = (pos2 - pos1);
-        if (dist.y > 0.1)
+        if (dist.y > 0.3)
         {
             isJumping = true;
         }
@@ -62,8 +66,10 @@ public class SimplePeoplePlayer : MonoBehaviour
             isJumping = false;
         }
         dist.y = 0;
-        speed = dist.sqrMagnitude * 3.0f;
+
+        speed = dist.sqrMagnitude * 3.0f * (timer * 33);
         Debug.Log(speed);
+
         checkMoving();
     }
 
