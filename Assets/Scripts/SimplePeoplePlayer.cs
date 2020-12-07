@@ -1,4 +1,5 @@
 ﻿using Photon.Pun;
+using System.Collections;
 using UnityEngine;
 
 /// <summary>
@@ -10,6 +11,7 @@ public class SimplePeoplePlayer : MonoBehaviour
     public PhotonView photonView;
     private Animator animator;
     private bool isMoving = false;
+    private float speed = 0f;
 
     /// <summary>
     /// Performs initialisation of this component.
@@ -23,6 +25,7 @@ public class SimplePeoplePlayer : MonoBehaviour
             this.animator.SetFloat("Speed_f", 0.0f);
             //this.animator.SetBool("Static_b", false);
         }
+        checkMoving();
     }
 
     /// <summary>
@@ -30,60 +33,40 @@ public class SimplePeoplePlayer : MonoBehaviour
     /// </summary>
     public void Update()
     {
-        // Process the movement input.
-        if (photonView.IsMine)
-            this.ProcessMovementInput();
+        ProcessMovementInput();
     }
 
     /// <summary>
     /// Processes movement input issued by the player (e.g. directional arrow keys, gamepad directional stick .etc.).
     /// </summary>
+    private void checkMoving()
+    {
+        StartCoroutine(IsThisObjectMoving(transform));
+    }
+    IEnumerator IsThisObjectMoving(Transform trans) {
+        Vector3 pos1;
+        Vector3 pos2;
+        pos1 = trans.position;
+        yield return new WaitForSeconds(0.05f);
+        pos2 = trans.position;
+        Debug.Log((pos1 - pos2).sqrMagnitude);
+        speed = (pos1 - pos2).sqrMagnitude * 1.5f;
+        checkMoving();
+    }
+
     private void ProcessMovementInput()
     {
-        if (photonView)
-        if (this.animator != null)
+        //if (photonView)
+        if (animator != null)
         {
-            // Get the movement input (if any) from the horizontal and vertical axes.
-            float weAxis = Input.GetAxis("Horizontal");
-            float nsAxis = Input.GetAxis("Vertical");
+            if (isMoving)
+            {
+                // Transition to the walking state.
+                animator.SetFloat("Speed_f", speed);
 
-            // Process the movement input.
-            if (!PhotonChatManager.typing && ((Mathf.Abs(weAxis) > 0.0f) || (Mathf.Abs(nsAxis) > 0.0f)))
+            } else
             {
-                // If the character is currently idle...
-                if (!this.isMoving)
-                {
-                    // Transition to the walking state.
-                    this.isMoving = true;
-                    this.animator.SetFloat("Speed_f", 0.4f);
-                }
-                
-                /*if (weAxis < 0.0f)
-                {
-                    // If the character should be walking west, rotate them to face west.
-                    this.transform.rotation = Quaternion.Euler(0.0f, 90.0f, 0.0f);
-                }
-                else if (weAxis > 0.0f)
-                {
-                    // If the character should be walking east, rotate them to face east.
-                    this.transform.rotation = Quaternion.Euler(0.0f, -90.0f, 0.0f);
-                }
-                else if (nsAxis < 0.0f)
-                {
-                    // If the character should be walking south, rotate them to face south.
-                    this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
-                }
-                else if (nsAxis > 0.0f)
-                {
-                    // If the character should be walking north, rotate them to face north.
-                    this.transform.rotation = Quaternion.Euler(0.0f, 180.0f, 0.0f);
-                }*/
-            }
-            else if (this.isMoving)
-            {
-                // If there is no movement input and the character is currently moving, transition to the idle state.
-                this.isMoving = false;
-                this.animator.SetFloat("Speed_f", 0.0f);
+                animator.SetFloat("Speed_f", speed);
             }
         }
     }
