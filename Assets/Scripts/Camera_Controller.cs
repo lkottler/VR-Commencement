@@ -45,7 +45,7 @@ public class Camera_Controller : MonoBehaviour
          * the plane in which the player character resides. The 89f is used to resolve a bug when
          * viewing from 90 degrees as the cameras interpolation vector would be continuosly reset.
          */
-        mouseY = Mathf.Clamp(mouseY, -initialCameraAngle, 89f - initialCameraAngle);  
+        mouseY = Mathf.Clamp(mouseY, -initialCameraAngle - 18, 89f - initialCameraAngle);  
     }
 
     void repositionCamera()
