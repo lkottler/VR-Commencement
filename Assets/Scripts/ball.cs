@@ -19,6 +19,14 @@ public class ball : MonoBehaviour
         Physics.IgnoreCollision(stadium.GetComponent<Collider>(), GetComponent<Collider>());
     }
 
+    private void Update()
+    {
+        if (transform.position.y < -500)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.name.Contains("Clone"))

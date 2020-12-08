@@ -9,6 +9,9 @@ public class QuickSpawn : MonoBehaviourPunCallbacks
 {
     [SerializeField]
     Button guestLoginButton, userLoginButton, regButton;
+
+    [SerializeField]
+    InputField serverName;
     
     [SerializeField]
     Text connectingText;
@@ -34,6 +37,11 @@ public class QuickSpawn : MonoBehaviourPunCallbacks
         m_Instance = this;
     }
 
+    private string getSelectedRoom()
+    {
+        return (serverName.text == "") ? "Commence" : serverName.text;
+    }
+
     public override void OnConnectedToMaster()
     {
         PhotonNetwork.AutomaticallySyncScene = true;
@@ -48,7 +56,7 @@ public class QuickSpawn : MonoBehaviourPunCallbacks
     {
         guestLoginButton.interactable = true;
         //PhotonNetwork.JoinRandomRoom();
-        PhotonNetwork.JoinRoom("Commencement");
+        PhotonNetwork.JoinRoom(getSelectedRoom());
         Debug.Log("Guest Logged in");
     }
 
@@ -65,8 +73,8 @@ public class QuickSpawn : MonoBehaviourPunCallbacks
         //int randomRoomNumber = Random.Range(0, 10000); // random number for room index
         RoomOptions roomOps = new RoomOptions() { IsVisible = true, IsOpen = true, MaxPlayers = (byte)RoomSize };
         //PhotonNetwork.CreateRoom("Room" + randomRoomNumber, roomOps);
-        PhotonNetwork.CreateRoom("Commencement", roomOps);
-        Debug.Log("Created room: Commencement");
+        PhotonNetwork.CreateRoom(getSelectedRoom(), roomOps);
+        Debug.Log("Created room: " + getSelectedRoom());
     }
 
     // This probably fails if the Random room number selected already exists as a room.
