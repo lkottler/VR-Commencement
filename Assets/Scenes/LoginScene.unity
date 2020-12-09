@@ -382,7 +382,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117867136}
   m_LocalRotation: {x: 0.34660938, y: -0.04241366, z: 0.0110142045, w: 0.93698543}
-  m_LocalPosition: {x: 2169.0747, y: 61.361664, z: 237.01855}
+  m_LocalPosition: {x: 2049, y: -50, z: 343}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1195435994}
@@ -680,7 +680,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 259}
+  m_AnchoredPosition: {x: 0, y: 303}
   m_SizeDelta: {x: 796.28217, y: 111.955505}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &366669634
@@ -1400,7 +1400,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000011444, y: 185.5}
+  m_AnchoredPosition: {x: 0.000011444, y: 239}
   m_SizeDelta: {x: 870.4913, y: 76.67139}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &704702144
@@ -1425,10 +1425,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c36a2483372388a4bbfce10901a20d12, type: 3}
-    m_FontSize: 51
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 2
     m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1574,7 +1574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5568628, g: 0.26666668, b: 0.6784314, a: 1}
+  m_Color: {r: 0.754717, g: 0.754717, b: 0.754717, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1833,7 +1833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -182.35785, y: -51.60254}
+  m_AnchoredPosition: {x: -408, y: -191}
   m_SizeDelta: {x: 342.2486, y: 45.136353}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1055573078
@@ -2516,8 +2516,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -146, y: -0.00020385}
-  m_SizeDelta: {x: 255.14685, y: 40.53563}
+  m_AnchoredPosition: {x: -216, y: -1.1594}
+  m_SizeDelta: {x: 391.13214, y: 42.81752}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1592204728
 MonoBehaviour:
@@ -2532,7 +2532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2552,7 +2552,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Server
+  m_Text: Create/Join Private Server
 --- !u!222 &1592204729
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -38,4 +38,5 @@ public class newBall : MonoBehaviour
         Vector3 position = new Vector3(-174.48f, 133f, 375f);
         GameObject ball = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "ball"), position, Quaternion.identity);
     }
+
 }

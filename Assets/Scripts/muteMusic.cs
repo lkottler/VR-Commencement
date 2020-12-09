@@ -8,6 +8,8 @@ public class muteMusic : MonoBehaviour
 {
     public Button muteButton;
     private bool muted = false;
+    public KeyCode _key;
+
     private void OnTriggerEnter(Collider other)
     {
         GameObject player = other.gameObject;
@@ -38,13 +40,23 @@ public class muteMusic : MonoBehaviour
         gameObject.GetComponent<AudioSource>().mute = muted;
         if (muted)
         {
-            muteButton.GetComponentInChildren<Text>().text = "Unmute";
+            muteButton.GetComponentInChildren<Text>().text = "(M)Unmute";
             muteButton.GetComponent<Image>().color = Color.green;
         }
         else
         {
-            muteButton.GetComponentInChildren<Text>().text = "Mute";
+            muteButton.GetComponentInChildren<Text>().text = "(M)Mute";
             muteButton.GetComponent<Image>().color = Color.red;
+        }
+    }
+
+    void Update()
+    {
+
+        if (Input.GetKeyDown(_key) && !PhotonChatManager.typing)
+        {
+            muteButton.onClick.Invoke();
+            Debug.Log("Mute key pressed.");
         }
     }
 }
